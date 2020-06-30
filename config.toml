@@ -1,0 +1,60 @@
+# theme url: https://github.com/panr/hugo-theme-hello-friend
+# google search guide: https://support.google.com/webmasters/answer/9274190
+
+baseurl      = "https://arcticnoah.consulting"
+title        = "arcticnoah | Site"
+languageCode = "en-us"
+theme        = ["hugo-video", "hello-friend"]
+paginate = 5
+
+# Uncomment below to add 'Disqus' section to blog posts
+# disqusShortname = "arcticnoah"
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+
+  # "light" or "dark"
+  defaultTheme = "light"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 3
+
+  # Show reading time in minutes for posts
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "arcticnoah"
+    subtitle = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    lastModDisplay = "Last Modified:"
+
+    [languages.en.params.logo]
+      logoText = "arcticnoah"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog"
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/"

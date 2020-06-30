@@ -1,0 +1,36 @@
+:root {
+    --accent: #FF3D73;
+}
+
+.logo__mark > .greater-icon > path {
+    stroke: var(--accent);
+}
+
+.logo__cursor {
+    background: var(--accent) !important;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.footer__inner > .logo > .logo__cursor {
+    display: none;
+}
+
+.copyright {
+    font-size: 0.75rem !important;
+}
+
+em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.html-video {
+    border-radius: 8px;
+}
+
+#disqus_thread {
+    padding-top: 20px;
+}
