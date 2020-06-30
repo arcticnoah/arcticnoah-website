@@ -4,12 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Blog Posts
 - type: document
   path: content/_index.md
   label: Main/About Page
   match: "**/*"
-- type: heading
-  label: Blog Posts
 - type: directory
   path: content/posts
   label: Posts
