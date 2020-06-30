@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Blog Posts
 - type: document
-  path: content/_index.md
+  path: content
   label: Main/About Page
   match: "**/*"
 - type: directory
