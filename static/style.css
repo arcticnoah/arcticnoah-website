@@ -34,3 +34,20 @@ em {
 #disqus_thread {
     padding-top: 20px;
 }
+
+.portfolio-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.portfolio-column {
+    float: left;
+    width: 50%;
+}
+
+.portfolio-cover {
+    width: 85%;
+    margin: auto;
+    border-radius: 8px;
+}

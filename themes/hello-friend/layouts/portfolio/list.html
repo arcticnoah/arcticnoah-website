@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<div class="archive">
+  <h1>{{ .Title }}</h1>
+  <div class="portfolio-row">
+    {{ range .Pages }}
+    <div class="portfolio-column">
+      <a href="{{ .Permalink }}">
+        {{ if .Params.Cover }}
+          {{ if .Params.UseRelativeCover }}
+            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="portfolio-cover" />
+          {{ else }}
+            <img src="{{ .Params.Cover | absURL }}" class="portfolio-cover" />
+          {{ end }}
+        {{ end }}
+      </a>
+    </div>
+    <div class="portfolio-column">
+      
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
