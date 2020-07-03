@@ -1,5 +1,5 @@
 ---
-title: "Portfolio"
+title: "Portfolio Catagories"
 layout: "list"
 url: "/portfolio"
 type: "portfolio"

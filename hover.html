@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+		/>
+		<style>
+			.thumb:hover .inner {
+				opacity: 1;
+				transition: opacity 0.25s;
+			}
+		</style>
+	</head>
+	<body>
+		<a class="db thumb relative" style="width: 50vw;" href="#">
+			<img class="w-100" src="https://via.placeholder.com/360x202" />
+			<div
+				class="inner absolute top-0 left-0 o-0 flex w-100 items-center justify-center"
+				style="height: calc(50vw / 1.7777);"
+			>
+				<div class="bg-white black pa2">Tooltip</div>
+			</div>
+		</a>
+	</body>
+</html>
