@@ -53,8 +53,20 @@ em {
 	display: block;
 }
 
-.portfolio-cover {
+.portfolio-cover-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	border-radius: 8px;
+	text-align: center;
+}
+
+.portfolio-item-tooltip-text {
+	text-align: center;
+}
+
+.portfolio-cover {
+	transition: all 0.4s;
 }
 
 .portfolio-item-tooltip-position {
@@ -65,12 +77,12 @@ em {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transition: opacity 0.25s;
+	transition: opacity 0.4s;
 	width: 100%;
 	height: 100%;
 }
 
-.portfolio-item-tooltip-text {
+.portfolio-item-tooltip-container {
 	font-weight: 800;
 	display: block;
 	color: white;
@@ -78,5 +90,20 @@ em {
 
 .portfolio-item:hover .portfolio-item-tooltip-position {
 	opacity: 1;
-	transition: opacity 0.25s;
+	transition: opacity 0.4s;
+}
+
+.portfolio-item:hover .portfolio-cover {
+	/* height: calc(100% + 16px) !important;
+	max-width: calc(100% + 9px) !important;
+	margin-top: -8px;
+	margin-left: -4.5px; */
+	transform: scale(1.02);
+	filter: blur(4px) brightness(0.7);
+	transition: all 0.4s;
+}
+
+#post-breadcrumb {
+	position: relative;
+	top: -20px
 }

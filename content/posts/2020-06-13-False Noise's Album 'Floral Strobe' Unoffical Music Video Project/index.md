@@ -1,6 +1,6 @@
 ---
 title: "False Noise's Album 'Floral Strobe' Unofficial Music Video Project"
-date: 2020-07-13T18:11:01+01:00
+date: 2020-06-13T18:11:01+01:00
 draft: true
 # cover: "cover.jpg"
 useRelativeCover: true
