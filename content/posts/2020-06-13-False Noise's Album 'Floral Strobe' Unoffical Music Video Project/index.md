@@ -8,7 +8,7 @@ tags:
     - visual
     - animation
     - project
-    - music video
+    - music-video
 ---
 
 REPLACE THIS VIDEO WITH A PREVIEW OF THE ACTUAL VIDEO AND ADD AUDIO TO IT

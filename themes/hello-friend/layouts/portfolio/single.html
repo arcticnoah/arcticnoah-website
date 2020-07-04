@@ -10,7 +10,7 @@
       item = document.getElementById("post-breadcrumb");
       pathArray = document.referrer.split("/");
       if (pathArray.length == 6) {
-        item.text = pathArray[4].charAt(0).toUpperCase() + pathArray[4].slice(1);;
+        item.text = "Back to " + (pathArray[4].charAt(0).toUpperCase() + pathArray[4].slice(1)) + " Portfolio";
       }
     </script>
 	{{ end }}
