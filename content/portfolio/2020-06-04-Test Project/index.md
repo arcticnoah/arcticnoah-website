@@ -5,6 +5,9 @@ timespan: "June 2020"
 draft: false
 cover: "cover.jpg"
 useRelativeCover: true
+type: "portfolio"
+categories:
+    - test
 ---
 
 ### Art Project

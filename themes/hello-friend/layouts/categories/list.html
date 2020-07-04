@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="archive">
+	{{ if ne .Parent.RelPermalink "/" }}
+		<a href="/portfolio">Back to Portfolio Categories</a>
+		<h1>{{ humanize .Title }} Portfolio</h1>
+	{{ else }}
+		<h1>Portfolio Categories</h1>
+	{{ end }}
+	<div class="portfolio-container">
+		{{ range .Pages }}
+		<a class="portfolio-item" href="{{ .Permalink }}">
+			<div class="portfolio-cover-container">
+				{{ if .Params.Cover }}
+					{{ if .Params.UseRelativeCover }}
+						<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="portfolio-cover" />
+					{{ else }}
+						<img src="{{ .Params.Cover | absURL }}" class="portfolio-cover" />
+					{{ end }}
+				{{ end }}
+			</div>
+			<div class="portfolio-item-tooltip-position">
+				<div class="portfolio-item-tooltip-container">
+					<h3 class="portfolio-item-tooltip-text">{{ .Params.Title }}</h3>
+					<h5 class="portfolio-item-tooltip-text">{{ .Params.Timespan }}</h5>
+				</div>
+			</div>
+		</a>
+		{{ end }}
+	</div>
+</div>
+{{ end }}
