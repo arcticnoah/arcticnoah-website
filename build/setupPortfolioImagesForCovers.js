@@ -42,9 +42,24 @@ for (let fname of files(startPath, ".md")) {
 
 let buildPath = splitPath.slice(0, splitPath.length - 1).join("/");
 
-if (!fs.existsSync(`${buildPath}/temp`)) {
-    fs.mkdirSync(`${buildPath}/temp`);
+
+// Clean up before running
+
+if (fs.existsSync(`${buildPath}/temp`)) {
+    fs.rmdirSync(`${buildPath}/temp`, { recursive: true });
 }
+
+fs.mkdirSync(`${buildPath}/temp`);
+
+// TODO: Remove old gifs in 'content/portfolio' only
+let portfolioPath = splitPath.slice(0, splitPath.length - 2).join("/") + "/content/portfolio";
+let portfolioFiles = fs.readdirSync(portfolioPath);
+portfolioFiles.forEach(function(file) {
+    // console.log(file);
+    if (file.endsWith(".gif")) {
+        fs.unlinkSync(portfolioPath + "/" + file);
+    }
+});
 
 for (let i of categoriesList) {
     let x = 0;
@@ -63,4 +78,6 @@ for (let i of categoriesList) {
     // console.log(`gm convert -delay 50 -loop 50 "build/temp/${i}/*.jpg" "content/portfolio/${i}.gif"`);
     cmd.run(`gm convert -delay 150 -loop 0 -size 750x375 "build/temp/${i}/*.jpg" "content/portfolio/${i}.gif"`);
 }
-// Remove temp folders
+
+// Remove temp stuff
+// fs.rmdirSync(`${buildPath}/temp`, { recursive: true });
