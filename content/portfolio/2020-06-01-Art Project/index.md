@@ -8,6 +8,9 @@ useRelativeCover: true
 type: "portfolio"
 categories:
     - art
+    - boris
+    - test
+    - brexit
 ---
 
 ### Art Project

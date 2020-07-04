@@ -19,7 +19,7 @@
 							<img src="{{ .Params.Cover | absURL }}" class="portfolio-cover" />
 						{{ end }}
 					{{ end }} -->
-					<img src="{{ (printf "%s%s" .Parent.Parent.RelPermalink "portfolio/cover.jpg" ) }}" class="portfolio-cover" />
+					<img src="{{ delimit (slice (printf "%s%s" .Parent.Parent.RelPermalink "portfolio/") (printf $name) (".gif")) "" }}" class="portfolio-cover" />
 				</div>
 				<div class="portfolio-item-tooltip-position">
 					<div class="portfolio-item-tooltip-container">
