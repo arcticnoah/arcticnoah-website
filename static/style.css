@@ -10,6 +10,10 @@
 	background: var(--accent) !important;
 }
 
+.menu__inner li {
+	margin: 0px 6px;
+}
+
 a:hover {
 	color: var(--accent);
 }
