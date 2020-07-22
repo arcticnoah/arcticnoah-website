@@ -21,11 +21,12 @@ Experimental Version: **v1.1-alpha** (experimental)
 
 - **v1.1-alpha**
     - Portfolio section has been added.
-        - Projects are categorised, since I have various interests.
+        - Projects are categorised via 'category' taxonomy, since I have various interests.
         - Categories are represented with a preview GIF, that is generated from the covers for each project.
         - Currently hidden from users as there is no content (yet).
     - Daily log section has been added.
         - Uses nearly identical code to the already existing blog section.
+        - Daily logs are categorised via 'focus' taxonomy, again since I have various interests.
 <br><br>
 - **v1.0**
     - Base website functionality.

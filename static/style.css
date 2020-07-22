@@ -1,5 +1,18 @@
 :root {
 	--accent: #ff3d73;
+
+	--light-background:#fff;
+	--light-background-secondary:#eaeaea;
+	--light-header:#fafafa;
+	--light-color:#222;
+	--light-color-secondary:#999;
+	--light-border-color:#dcdcdc;
+	--dark-background:#292a2d;
+	--dark-background-secondary:#3b3d42;
+	--dark-header:#252627;
+	--dark-color:#a9a9b3;
+	--dark-color-secondary:#73747b;
+	--dark-border-color:#4a4b50;
 }
 
 .logo__mark > .greater-icon > path {
@@ -110,4 +123,22 @@ em {
 #post-breadcrumb {
 	position: relative;
 	top: -20px
+}
+
+.post-content > img {
+	border-radius: 8px;
+	margin: 40px -50px;
+	width: 860px;
+	max-width: 860px;
+	box-shadow: 0 12px 40px rgba(0,0,0,.15);
+}
+
+.image-caption {
+	text-align: center;
+	margin-bottom: 32px;
+	color: var(--light-color-secondary);
+}
+
+.dark-theme .image-caption {
+	color: var(--dark-color-secondary) !important;
 }
