@@ -8,6 +8,8 @@
 	{{ end }}
 	<div class="portfolio-container">
 		{{ range .Pages }}
+		<!-- TODO: fix this when path is '/categories' to list all categories -->
+		<!-- TODO: make this look like the tags page -->
 		<a class="portfolio-item" href="{{ .Permalink }}">
 			<div class="portfolio-cover-container">
 				{{ if .Params.Cover }}

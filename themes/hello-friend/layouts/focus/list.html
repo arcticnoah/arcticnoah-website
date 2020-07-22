@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="archive">
+	{{ if ne .Parent.RelPermalink "/" }}
+		<a href="/dailylogs">Back to Daily Logs</a>
+		<h1>Daily Logs: {{ humanize .Title }} Focused</h1>
+	{{ else }}
+		<h1>Daily Logs Focuses</h1>
+	{{ end }}
+	<div class="dailylog-container">
+		{{ range .Pages }}
+		<!-- TODO: make this look like the tags page -->
+		<a class="dailylog-item" href="{{ .Permalink }}">
+			<div class="dailylog-cover-container">
+				{{ if .Params.Cover }}
+					{{ if .Params.UseRelativeCover }}
+						<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="dailylog-cover" />
+					{{ else }}
+						<img src="{{ .Params.Cover | absURL }}" class="dailylog-cover" />
+					{{ end }}
+				{{ end }}
+			</div>
+			<div class="dailylog-item-tooltip-position">
+				<div class="dailylog-item-tooltip-container">
+					<h3 class="dailylog-item-tooltip-text">{{ .Params.Title }}</h3>
+					<h5 class="dailylog-item-tooltip-text">{{ .Params.Timespan }}</h5>
+				</div>
+			</div>
+		</a>
+		{{ end }}
+	</div>
+</div>
+{{ end }}
