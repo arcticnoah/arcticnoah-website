@@ -7,6 +7,8 @@
     <img src="https://api.netlify.com/api/v1/badges/6055c57f-dd7d-44bf-9d3f-ba5d76a3576b/deploy-status">
 </p>
 
+<br>
+
 > Built using [Hugo](https://gohugo.io) with an edited version of the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) theme. Hosted with [Netlify](https://netlify.com/).
 
 # Versions:
