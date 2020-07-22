@@ -15,6 +15,21 @@
 	--dark-border-color:#4a4b50;
 }
 
+/* Phone */
+@media (max-width: 683px) {
+	.portfolio-container {
+		grid-template-columns: 100%;
+	}
+}
+
+/* Tablet */
+@media (max-width: 899px) {
+	.post-content > img {
+		margin: 20px 0 !important;
+		width: 100% !important;
+	}
+}
+
 .logo__mark > .greater-icon > path {
 	stroke: var(--accent);
 }
@@ -57,12 +72,6 @@ em {
 	grid-template-columns: 50% 50%;
 	column-gap: 1rem;
 	row-gap: 1rem;
-}
-
-@media (max-width: 684px) {
-	.portfolio-container {
-		grid-template-columns: 100%;
-	}
 }
 
 .portfolio-item {
