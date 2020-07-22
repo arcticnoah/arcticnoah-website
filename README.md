@@ -37,6 +37,6 @@ Experimental Version: **v1.1** (experimental)
 
 # Planned Features:
 
-- Contact Page
+- Contact Page/Form
 - Commission Section/Form
 - CV/Resume
