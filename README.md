@@ -13,13 +13,13 @@
 
 # Versions:
 
-Currently Hosted Version: **v1.0** (master)
+Currently Hosted Version: **v1.1** (master)
 
-Experimental Version: **v1.1-alpha** (experimental)
+Experimental Version: **v1.1** (experimental)
 
 # Changelog:
 
-- **v1.1-alpha**
+- **v1.1**
     - Portfolio section has been added.
         - Projects are categorised via 'category' taxonomy, since I have various interests.
         - Categories are represented with a preview GIF, that is generated from the covers for each project.
