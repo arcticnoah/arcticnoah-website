@@ -13,8 +13,6 @@
   {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
 
   <div class="posts">
-    <p>{{ .Pages }}</p>
-    <p>{{ .Parent.RelPermalink }}</p>
     {{ range $paginator.Pages }}
     <div class="post on-list">
       <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
@@ -46,6 +44,14 @@
         <span class="post-categories">
           {{ range .Params.categories }}
             #<a href="{{ (urlize (printf "categories/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+          {{ end }}
+        </span>
+      {{ end }}
+
+      {{ if .Params.focus }}
+        <span class="post-focus">
+          {{ range .Params.focus }}
+            #<a href="{{ (urlize (printf "focus/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
           {{ end }}
         </span>
       {{ end }}

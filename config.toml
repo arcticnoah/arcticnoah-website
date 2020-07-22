@@ -26,6 +26,7 @@ paginate = 5
 [taxonomies]
   tag = "tags"
   category = "categories"
+  focus = "focus"
 
 [languages]
   [languages.en]
@@ -53,15 +54,20 @@ paginate = 5
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
+    # TODO: make the order of this be the same in the header of the site
     [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/"
       [[languages.en.menu.main]]
         identifier = "blog"
         name = "Blog"
         url = "/blog"
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/"
+        identifier = "dailylog"
+        name = "Daily Log"
+        url = "/dailylog"
       [[languages.en.menu.main]]
         identifier = "portfolio"
         name = "Portfolio"

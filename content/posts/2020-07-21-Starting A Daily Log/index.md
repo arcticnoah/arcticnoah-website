@@ -11,6 +11,10 @@ tags:
 
 ### What is a 'Daily Log'?
 
-A daily log is essentially going to be my version of a diary but open to the public (that'll means it'll include less personal details...). The purpose of doing this is that I've been kinda falling behind with staying on track of my projects and also I'd like to document my progress (since I often scrap sketches/work in progress drafts/etc) since it'll help me either be impressed (or depressed) by the amount of progress/work I manage to achieve. I also generally have tend to work on things without really telling others about it and when I finally tell others its kinda a surprise with no real gain of it being a 'surprise'. If anything, its probably slowing down my progress by being 'secretive'/kept under wraps with what I'm doing.
+A daily log is going to be my version of a diary but with a focus on what I've been up to in the day. I was quite inspired by various development logs, and since I want this to be more of a daily thing and kinda just focus on whatever I've done, I decided to call it a daily log :P
 
-#TODO: Write this better ;)
+I think having some sort of documentation of the stuff I'm doing, will be both great for me to actually try and work on showing sketches/work in progress drafts/etc rather than scraping them like I currently do, and also have a record to be impressed (or depressed) with, by the amount of work I manage to achieve over a period of time.
+
+I think the main reason I tend to scrap most things I do throughout the day is because I feel things aren't up to my self-set standards and aren't worth continuing, which is honestly a terrible mindset and one that I'm really trying to change as of late. I want to learn to *enjoy the process just as much as the outcome*.
+
+I know its been almost a month again since I last posted but I've actually been quite busy during that time, but nevertheless I'll be trying to post much more frequently :D
