@@ -2,7 +2,7 @@
 
 My name is Noah, but I mostly go under the alias *arcticnoah*.
 
-I'd like to thank you for taking your time to visit! I'm hoping to have my [portfolio]() and [blog](/blog) over here.
+I'd like to thank you for taking your time to visit! I'm hoping to have my [portfolio](), [daily log](/dailylog) and [blog](/blog) over here.
 
 I am currently focusing on learning multiple aspects of programming, but I also have various other creative hobbies.
 

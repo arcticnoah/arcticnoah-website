@@ -69,6 +69,6 @@ languages:
         - identifier: dailylog
           name: Daily Log
           url: /dailylog
-        - identifier: portfolio
-          name: Portfolio
-          url: /portfolio
+        # - identifier: portfolio
+        #   name: Portfolio
+        #   url: /portfolio
