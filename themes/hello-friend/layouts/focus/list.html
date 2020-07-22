@@ -1,32 +1,48 @@
 {{ define "main" }}
-<div class="archive">
-	{{ if ne .Parent.RelPermalink "/" }}
-		<a href="/dailylogs">Back to Daily Logs</a>
+{{ if ne .Parent.RelPermalink "/" }}
+	<div class="archive">
+		<a href="/focus">Back to Daily Logs Focuses</a>
 		<h1>Daily Logs: {{ humanize .Title }} Focused</h1>
-	{{ else }}
-		<h1>Daily Logs Focuses</h1>
-	{{ end }}
-	<div class="dailylog-container">
-		{{ range .Pages }}
-		<!-- TODO: make this look like the tags page -->
-		<a class="dailylog-item" href="{{ .Permalink }}">
-			<div class="dailylog-cover-container">
-				{{ if .Params.Cover }}
-					{{ if .Params.UseRelativeCover }}
-						<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="dailylog-cover" />
-					{{ else }}
-						<img src="{{ .Params.Cover | absURL }}" class="dailylog-cover" />
+		<div class="dailylog-container">
+			{{ range .Pages }}
+			<div class="archive__post">
+				<h3 class="archive__post-title"><a
+					href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+				</h3>
+				<div class="archive__post-meta">
+					<!-- <span class="archive__post-date">
+						{{ .Date.Format ($.Site.Params.DateFormatList | default "2006-01-02") }}
+					</span> -->
+					{{ with .Params.Author }}
+					<span class="archive__post-author">—
+						{{ $.Site.Params.WrittenBy | default "Written by" }}
+						{{ . }}
+					</span>
 					{{ end }}
-				{{ end }}
-			</div>
-			<div class="dailylog-item-tooltip-position">
-				<div class="dailylog-item-tooltip-container">
-					<h3 class="dailylog-item-tooltip-text">{{ .Params.Title }}</h3>
-					<h5 class="dailylog-item-tooltip-text">{{ .Params.Timespan }}</h5>
+					{{ if $.Site.Params.ShowReadingTime }}
+					<span class="archive__post-read-time">— {{ .ReadingTime }}
+						{{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
+					{{ end }}
 				</div>
 			</div>
-		</a>
-		{{ end }}
+			{{ end }}
+		</div>	
 	</div>
-</div>
+	{{ else }}
+	<div class="terms">
+		<h1>Daily Logs Focuses</h1>
+		<ul class="terms__list">
+			{{range $name, $taxonomy := .Site.Taxonomies.focus}} {{ $cnt := .Count }}
+				{{ with $.Site.GetPage (printf "/focus/%s" $name) }}
+					<li class="terms__term">
+						<a href="/focus/{{ $name }}">
+							#{{ $name }}
+							<span class="terms__term-count">{{ $cnt }}</span>
+						</a>
+					</li>
+				{{end}}
+			{{end}}
+		</ul>
+	</div>
+{{ end }}
 {{ end }}
