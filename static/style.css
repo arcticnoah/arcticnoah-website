@@ -142,12 +142,12 @@ em {
 	box-shadow: 0 12px 40px rgba(0,0,0,.15);
 }
 
-.image-caption {
+.content-caption {
 	text-align: center;
 	margin-bottom: 32px;
 	color: var(--light-color-secondary);
 }
 
-.dark-theme .image-caption {
+.dark-theme .content-caption {
 	color: var(--dark-color-secondary) !important;
 }
