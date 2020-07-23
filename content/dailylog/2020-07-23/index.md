@@ -16,7 +16,7 @@ Today didn't result into much progress sadly. I was looking into vj software for
 
 So I decided to try out OSC, which I had heard of before but never personally used, to try and create a simple visual scene that could be controlled via OSC from Ableton Live. Here is the current result:
 
-{{< video src="oscdemo" autoplay="false" loop="true" muted="false" controls="true" caption="Unmute the video to see the change in audio syncing with the visuals via OSC!" >}}
+{{< video src="oscdemo" autoplay="false" loop="false" muted="false" controls="true" caption="Make sure to have audio on to see how the visuals sync with the audio via OSC!" >}}
 
 ### How I setup the scene above:
 
