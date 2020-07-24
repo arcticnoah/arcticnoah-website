@@ -59,7 +59,6 @@ languages:
         # path = "/img/your-example-logo.svg"
         # alt = "Your example logo alt text"
     
-    # TODO: make the order of this be the same in the menu of the site
     menu:
       main:
         - identifier: about
