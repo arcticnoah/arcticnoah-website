@@ -12,6 +12,8 @@ paginate: 5
 # Uncomment below to add 'Disqus' section to blog posts
 # disqusShortname: "arcticnoah"
 
+googleAnalytics: true
+
 params:
   # dir name of your blog content (default is `content/posts`)
   contentTypeName: posts
