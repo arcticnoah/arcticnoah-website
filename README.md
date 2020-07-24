@@ -15,7 +15,7 @@
 
 Currently Hosted Version: **v1.1** (master)
 
-Experimental Version: **v1.1** (experimental)
+Experimental Version: **v1.2-alpha** (experimental)
 
 # Changelog:
 
