@@ -64,4 +64,7 @@
   {{ end }}
   <p>{{ i18n "videoUnsupported" $video_dl | markdownify }}</p>
 </video>
+{{ if .Get "caption" }}
+  <p class="content-caption">{{ .Get "caption" }}</p>
+{{ end }}
 {{ end }}
