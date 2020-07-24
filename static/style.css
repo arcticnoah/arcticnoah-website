@@ -35,7 +35,7 @@ a:hover {
 	display: none;
 }
 
-.copyright {
+.copyright, #toggle-cookies {
 	font-size: 0.75rem !important;
 }
 
@@ -141,4 +141,46 @@ em {
 
 .dark-theme .image-caption {
 	color: var(--dark-color-secondary) !important;
+}
+
+.cookie-banner {
+	position: fixed;
+	bottom: 40px;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	padding: 5px 14px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--light-header);
+	border-radius: 8px;
+	box-shadow: 0 12px 40px rgba(0,0,0,.15);
+}
+
+.dark-theme .cookie-banner {
+	background: var(--dark-header);
+}
+
+.cookie-close {
+	background: inherit;
+	cursor: pointer;
+	margin: 0;
+	font-size: 1.25rem;
+}
+  
+.cookie-agree, .cookie-disagree {
+	font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif;
+	height: 20px;
+	width: 86px;
+	/* background-color: var(--light-header); */
+	border: none;
+	/* color: var(--light-color); */
+	border-radius: 8px;
+	cursor: pointer;
+	margin: 0;
+}
+
+.cookie-buttons-spacing {
+	height: 8px;
 }
