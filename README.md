@@ -13,13 +13,13 @@
 
 # Versions:
 
-Currently Hosted Version: **v1.1** (master)
+Currently Hosted Version: **v1.0** (master)
 
-Experimental Version: **v1.1** (experimental)
+Experimental Version: **v1.1-alpha** (experimental)
 
 # Changelog:
 
-- **v1.1**
+- **v1.1-alpha**
     - Portfolio section has been added.
         - Projects are categorised via 'category' taxonomy, since I have various interests.
         - Categories are represented with a preview GIF, that is generated from the covers for each project.
@@ -37,6 +37,6 @@ Experimental Version: **v1.1** (experimental)
 
 # Planned Features:
 
-- Contact Page/Form
+- Contact Page
 - Commission Section/Form
 - CV/Resume
