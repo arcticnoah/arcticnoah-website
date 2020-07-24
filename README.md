@@ -15,10 +15,16 @@
 
 Currently Hosted Version: **v1.1** (master)
 
-Experimental Version: **v1.1** (experimental)
+Experimental Version: **v1.2-alpha** (experimental)
 
 # Changelog:
 
+- **v1.2-alpha**
+    - Third party cookie support added.
+        - Currently only using Google Analytics, not expecting to anymore.
+        - Created a cookie consent dialog to comply with GDPR and also generally respect users with keeping them in the loop.
+        - Third-party cookies can be easily toggled from every page via the footer.
+<br><br>
 - **v1.1**
     - Portfolio section has been added.
         - Projects are categorised via 'category' taxonomy, since I have various interests.
