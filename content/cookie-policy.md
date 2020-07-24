@@ -1,4 +1,3 @@
-@@ -0,0 +1,29 @@
 ---
 title: "Cookie Policy"
 layout: "single"
@@ -17,9 +16,9 @@ Functionality cookies let us operate the site in accordance with the choices you
 
 #### Analytical cookies
 
-These cookies enable us and third-party services to collect aggregated data for statistical purposes on how our visitors use the website. These cookies do not contain personal information such as names and email addresses and are used to help us improve your user experience of the website.
+These cookies enable me and third-party services (only Google in this case) to collect aggregated data for statistical purposes on how visitors use the website. These cookies do not contain personal information such as names and email addresses and are used to help me understand how users use the site and also for general statistics.
 
-I am only using Google Analytics, which you can read into more detail here: https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage
+I am only using [Google Analytics](https://marketingplatform.google.com/about/analytics/), which you can read into more detail about their cookies [here](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
 
 ### How to disable/delete cookies?
 

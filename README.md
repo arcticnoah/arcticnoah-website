@@ -21,8 +21,9 @@ Experimental Version: **v1.2-alpha** (experimental)
 
 - **v1.2-alpha**
     - Third party cookie support added.
-        - Currently only using Google Analytics, not expecting to anymore.
+        - Currently only using Google Analytics, not expecting to use more.
         - Created a cookie consent dialog to comply with GDPR and also generally respect users with keeping them in the loop.
+        - Created cookie policy page with info on what the cookies do.
         - Third-party cookies can be easily toggled from every page via the footer.
 <br><br>
 - **v1.1**
