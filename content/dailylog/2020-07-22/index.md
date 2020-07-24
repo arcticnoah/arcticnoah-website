@@ -1,5 +1,5 @@
 ---
-title: "2020-07-22: Working on this website!"
+title: "Working on this website!"
 date: 2020-07-22
 draft: false
 type: "dailylog"
