@@ -1,4 +1,4 @@
-# Noah Schmidt
+# Noah
 
 ### Job Title
 
