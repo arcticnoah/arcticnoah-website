@@ -21,6 +21,6 @@ To do this, I first created the typical cookie consent banner that various other
 
 I also added a cookie policy page that explains what the cookies do, why I'm using them and how to disable/delete them. After having written that last section, I decided to make it easy to toggle between enabling and disabling the third party cookies on the site, by adding a toggle button in the footer (thats present on all the pages of the site).
 
-{{< video src="cookiedemo" autoplay="false" loop="false" muted="true" controls="true" >}}
+{{< video src="cookie-demo" autoplay="false" loop="false" muted="true" controls="true" >}}
 
 Currently this is all only present on the experimental branch of the site, where I'm planning to add some more new features first before pushing them onto the public/live branch.
