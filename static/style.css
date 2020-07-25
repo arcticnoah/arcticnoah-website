@@ -20,6 +20,10 @@
 	.portfolio-container {
 		grid-template-columns: 100%;
 	}
+
+	.dark-theme .menu {
+		background: var(--dark-header);
+	}
 }
 
 /* Tablet */
