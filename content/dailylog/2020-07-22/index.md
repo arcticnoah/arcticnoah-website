@@ -15,7 +15,7 @@ So today I've been mostly doing some maintenance on this very site by organising
 
 I've updated the repo's readme to be more informative and polished, as the one before was **very** temporary.
 
-{{< image src="readme-changes.png" position="center" caption="Difference between the old readme and the new one.">}}
+{{< image src="readme-changes.png" position="center" caption="Difference between the old readme and the new one">}}
 
 I also added this daily log section today! It took a bit of work since I copied stuff over from the portfolio section (which is hidden whilst I have no content for it) but realised that the code wasn't fully finished yet.
 
