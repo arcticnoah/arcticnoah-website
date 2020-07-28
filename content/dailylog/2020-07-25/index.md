@@ -15,6 +15,7 @@ A week or so ago, I asked a great friend of mine, [steb](https://twitter.com/st3
 {{< image src="render-before.jpg" position="center" caption="The render before today's adjustments" >}}
 
 His main points to fix were:
+
  - Change the materials to be less clean by adding variations/imperfections.
  - Add some more details to the walls (like posters) as they're fairly plain.
  - Change the lighting to either highlight or silhouette the character (its an awesome free model that I found [here](https://gumroad.com/thestoff#lFnryq)).
