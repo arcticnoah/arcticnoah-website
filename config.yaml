@@ -73,3 +73,6 @@ languages:
         # - identifier: portfolio
         #   name: Portfolio
         #   url: /portfolio
+        - identifier: contact
+          name: Contact
+          url: /contact
