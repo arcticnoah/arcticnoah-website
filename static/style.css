@@ -116,10 +116,6 @@ em {
 }
 
 .grid-item:hover .grid-item-cover {
-	/* height: calc(100% + 16px) !important;
-	max-width: calc(100% + 9px) !important;
-	margin-top: -8px;
-	margin-left: -4.5px; */
 	transform: scale(1.02);
 	filter: blur(4px) brightness(0.7);
 	transition: all 0.4s;
@@ -178,9 +174,7 @@ em {
 	font-family: Inter,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif;
 	height: 20px;
 	width: 86px;
-	/* background-color: var(--light-header); */
 	border: none;
-	/* color: var(--light-color); */
 	border-radius: 8px;
 	cursor: pointer;
 	margin: 0;
