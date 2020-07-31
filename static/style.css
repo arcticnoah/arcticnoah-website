@@ -205,3 +205,13 @@ form textarea {
 	padding: 8px;
 	border-radius: 8px;
 }
+
+.dark-theme form input {
+	background: var(--dark-background-secondary);
+	color: var(--dark-color);
+}
+
+.dark-theme form textarea {
+	background: var(--dark-background-secondary);
+	color: var(--dark-color);
+}
