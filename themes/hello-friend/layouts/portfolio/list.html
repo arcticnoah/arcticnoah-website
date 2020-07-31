@@ -7,24 +7,24 @@
 		<h1>Portfolio Categories</h1>
 	{{ end }}
 
-	<div class="portfolio-container">
+	<div class="grid-container">
 		{{range $name, $taxonomy := .Site.Taxonomies.categories}} {{ $cnt := .Count }}
 		{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
-			<a class="portfolio-item" href="{{ .RelPermalink }}">
-				<div class="portfolio-cover-container">
+			<a class="grid-item" href="{{ .RelPermalink }}">
+				<div class="grid-item-cover-container">
 					<!-- {{ if .Params.Cover }}
 						{{ if .Params.UseRelativeCover }}
-							<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="portfolio-cover" />
+							<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="grid-item-cover" />
 						{{ else }}
-							<img src="{{ .Params.Cover | absURL }}" class="portfolio-cover" />
+							<img src="{{ .Params.Cover | absURL }}" class="grid-item-cover" />
 						{{ end }}
 					{{ end }} -->
-					<img src="{{ delimit (slice (printf "%s%s" .Parent.Parent.RelPermalink "portfolio/") (printf $name) (".gif")) "" }}" class="portfolio-cover" />
+					<img src="{{ delimit (slice (printf "%s%s" .Parent.Parent.RelPermalink "portfolio/") (printf $name) (".gif")) "" }}" class="grid-item-cover" />
 				</div>
-				<div class="portfolio-item-tooltip-position">
-					<div class="portfolio-item-tooltip-container">
-						<h3 class="portfolio-item-tooltip-text">{{ humanize $name }}</h3>
-						<!-- <h5 class="portfolio-item-tooltip-text">{{ .Params.Timespan }}</h5> -->
+				<div class="grid-item-tooltip-position">
+					<div class="grid-item-tooltip-container">
+						<h3 class="grid-item-tooltip-text">{{ humanize $name }}</h3>
+						<!-- <h5 class="grid-item-tooltip-text">{{ .Params.Timespan }}</h5> -->
 					</div>
 				</div>
 			</a>
@@ -36,20 +36,20 @@
 		{{end}}
 
 		<!-- {{ range .Pages }}
-		<a class="portfolio-item" href="{{ .Permalink }}">
-			<div class="portfolio-cover-container">
+		<a class="grid-item" href="{{ .Permalink }}">
+			<div class="grid-item-cover-container">
 				{{ if .Params.Cover }}
 					{{ if .Params.UseRelativeCover }}
-						<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="portfolio-cover" />
+						<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="grid-item-cover" />
 					{{ else }}
-						<img src="{{ .Params.Cover | absURL }}" class="portfolio-cover" />
+						<img src="{{ .Params.Cover | absURL }}" class="grid-item-cover" />
 					{{ end }}
 				{{ end }}
 			</div>
-			<div class="portfolio-item-tooltip-position">
-				<div class="portfolio-item-tooltip-container">
-					<h3 class="portfolio-item-tooltip-text">{{ .Params.Title }}</h3>
-					<h5 class="portfolio-item-tooltip-text">{{ .Params.Timespan }}</h5>
+			<div class="grid-item-tooltip-position">
+				<div class="grid-item-tooltip-container">
+					<h3 class="grid-item-tooltip-text">{{ .Params.Title }}</h3>
+					<h5 class="grid-item-tooltip-text">{{ .Params.Timespan }}</h5>
 				</div>
 			</div>
 		</a>
