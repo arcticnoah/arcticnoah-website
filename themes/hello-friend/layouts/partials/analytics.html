@@ -2,10 +2,12 @@
   if (localStorage.getItem("thirdPartyCookiesAgreed") == "true") {
     let scripts = Array.from(document.querySelectorAll('script')).map(scr => scr.src);
     
-    if (!scripts.includes('filePathToJSScript')) {
+    scriptPath = "https://www.googletagmanager.com/gtag/js?id=UA-47284735-5";
+
+    if (!scripts.includes(scriptPath)) {
       var script = document.createElement('script');
       script.async = "";
-      script.src = "https://www.googletagmanager.com/gtag/js?id=UA-47284735-5";
+      script.src = scriptPath;
       document.getElementsByTagName('head')[0].appendChild(script);
 
       window.dataLayer = window.dataLayer || [];
