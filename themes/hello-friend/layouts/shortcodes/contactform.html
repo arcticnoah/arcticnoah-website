@@ -1,4 +1,4 @@
-<form name="contact" action="/form-confirmation" method="POST" data-netlify="true">
+<form name="contact" action="/form-confirmation" method="POST" data-netlify-recaptcha="true" data-netlify="true">
     <p>
         <label>Your Name: </label>
         <br>
@@ -13,6 +13,9 @@
         <label>Message: </label>
         <br>
         <textarea class="form-textarea" name="message"></textarea>
+    </p>
+    <p>
+        <div data-netlify-recaptcha="true"></div>
     </p>
     <p>
         <button type="submit">Send</button>
