@@ -14,3 +14,5 @@ fields:
 - type: list
   name: focus
   label: focus
+pages:
+- content/dailylog/2020-08-01/index.md
