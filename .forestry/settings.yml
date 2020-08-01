@@ -5,13 +5,18 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
-  label: Blog Posts
+  label: Content
 - type: document
   path: content/_index.md
-  label: Main/About Page
+  label: Home/About Page
 - type: directory
   path: content/posts
   label: Posts
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/dailylog
+  label: Daily Log
   create: all
   match: "**/*"
 upload_dir: static/uploads
