@@ -20,6 +20,9 @@ Experimental Version: **v1.2-alpha** (experimental)
 # Changelog:
 
 - **v1.2-alpha**
+    - Contact section has been added.
+        - Includes a list of my social media links.
+        - Email form has been added, lets users send an 'email' to me directly without revealing my email publicly.
     - Third party cookie support added.
         - Currently only using Google Analytics, not expecting to use more.
         - Created a cookie consent dialog to comply with GDPR and also generally respect users with keeping them in the loop.
