@@ -1,7 +1,7 @@
 # theme url: https://github.com/panr/hugo-theme-hello-friend
 # google search guide: https://support.google.com/webmasters/answer/9274190
 
-baseurl: ''
+baseurl: 'https://arcticnoah.consulting'
 title: arcticnoah | Site
 languageCode: en-us
 theme:

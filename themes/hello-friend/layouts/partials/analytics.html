@@ -18,7 +18,7 @@ ga('send', 'pageview');
 </script> -->
 
 <script>
-  if (localStorage.getItem("thirdPartyCookiesAgreed") != "true") {
+  if (localStorage.getItem("thirdPartyCookiesAgreed") == "true") {
     let scripts = Array.from(document.querySelectorAll('script')).map(scr => scr.src);
     
     if (!scripts.includes('filePathToJSScript')) {
