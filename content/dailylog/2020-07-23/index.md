@@ -1,5 +1,5 @@
 ---
-title: "Experimenting with OSC for Audio Visuals"
+title: "Experimenting with OSC for audio visuals"
 date: 2020-07-23
 draft: false
 type: "dailylog"

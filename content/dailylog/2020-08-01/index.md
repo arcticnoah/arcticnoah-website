@@ -1,7 +1,7 @@
 ---
-title: "TEMP"
+title: "Finishing and testing some features for the site"
 date: 2020-08-01
-draft: true
+draft: false
 type: "dailylog"
 focus:
     - programming
