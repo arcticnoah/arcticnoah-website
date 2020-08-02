@@ -4,7 +4,7 @@ date: 2020-07-26
 draft: false
 type: "dailylog"
 focus:
-    - taking-a-break
+    - break
 ---
 
 ### Deciding when its okay to take a break

@@ -6,6 +6,7 @@ cover: "cover.jpg"
 useRelativeCover: true
 tags: 
     - announcement
+    - challenge
     - art
 ---
 
