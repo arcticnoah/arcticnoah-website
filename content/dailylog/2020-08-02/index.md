@@ -1,5 +1,5 @@
 ---
-title: "Preparing for my August Daily Art Challenge"
+title: "Preparing for my August daily art challenge"
 date: 2020-08-02
 draft: false
 type: "dailylog"
