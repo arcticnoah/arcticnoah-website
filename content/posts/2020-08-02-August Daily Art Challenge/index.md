@@ -29,3 +29,7 @@ So I'll be doing traditional art for the sketchbook (mostly likely but hopefully
  - Composition
 
 The goal of this challenge is to actually be able to draw more proportionally accurate people than what I'm currently capable of, so hopefully thats whats gonna happen :)
+
+#### Edit (2020-08-04):
+
+I said that I'd start it yesterday and I did for the most part but something came up so I didn't manage to finish it... I'm already trying to catch up on it today
