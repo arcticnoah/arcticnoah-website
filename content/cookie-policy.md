@@ -8,17 +8,11 @@ url: "/cookie-policy"
 
 Cookies are simple text files that are stored on your computer or mobile device by a website’s server. Each cookie is unique to your web browser. It will contain some anonymous information such as a unique identifier, website’s domain name, and some digits and numbers.
 
-### What types of cookies do I use?
+### What type of cookies do I use?
 
-#### Functionality cookies
+#### Necessary cookies
 
-Functionality cookies let us operate the site in accordance with the choices you make. On this site, the theme you've selected and whether or not you want to allow other cookies are considered functional cookies.
-
-#### Analytical cookies
-
-These cookies enable me and third-party services (only Google in this case) to collect aggregated data for statistical purposes on how visitors use the website. These cookies do not contain personal information such as names and email addresses and are used to help me understand how users use the site and also for general statistics.
-
-I am only using [Google Analytics](https://marketingplatform.google.com/about/analytics/), which you can read into more detail about their cookies [here](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
+Necessary cookies are required to let the user choose if they want cookies enabled. On this site, the theme you've selected and whether or not you want to allow other cookies are considered necessary cookies.
 
 ### How to disable/delete cookies?
 
