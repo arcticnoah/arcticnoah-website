@@ -1,15 +1,3 @@
-<div class="cookie-banner" style="display: none">
-  <button class="cookie-close">&times;</button>
-  <p>
-    This website uses cookies, you can read about it here: <a href="/cookie-policy">Cookie Policy</a>
-  </p>
-  <div class="cookie-buttons">
-    <button class="cookie-agree">Agree</button>
-    <div class="cookie-buttons-spacing"></div>
-    <button class="cookie-disagree">Disagree</button>
-  </div>
-</div>
-
 <footer class="footer">
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
@@ -18,8 +6,6 @@
       {{ partial "logo.html" . }}
       <div class="copyright">
         <span>© {{ now.Year }} arcticnoah</span>
-        <span><a href="/cookie-policy">Cookie Policy</a></span>
-        <a href="javascript:toggleThirdPartyCookies();" id="toggle-cookies">... third party cookies</a>
       </div>
     {{end}}
   </div>
