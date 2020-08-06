@@ -1,6 +1,6 @@
 ---
 title: "August Daily Art Challenge"
-date: 2020-08-01T14:15:02+01:00
+date: 2020-08
 timespan: "August 2020"
 draft: true
 cover: "cover.jpg"

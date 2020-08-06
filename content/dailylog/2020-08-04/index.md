@@ -4,6 +4,7 @@ date: 2020-08-04
 draft: false
 type: "dailylog"
 focus:
+    - 2020-august-daily-art-challenge
     - art
     - traditional-art
     - programming
@@ -33,7 +34,7 @@ I also managed to do 2 pages of the 'bean' practise exercise today, as you can s
 
 {{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/bean-page2.jpg" position="center" caption="Each of these 'beans' were done with a 45 second time limit" >}}
 
-I later in the day watched the video, ['Iterative Drawing'](https://www.youtube.com/watch?v=k0ufz75UvHs) by Sycra, which I found to be a very relatable video on how to approach learning and improving when you're either an analytical or intuitive person. I'd guess I'm around 65% analytical and 35% intuitive but I seem to become much more intuitive later in the day, which I find can beneficial at times.
+I later in the day watched the video, ['Iterative Drawing'](https://www.youtube.com/watch?v=k0ufz75UvHs) by Sycra, which I found to be a very relatable video on how to approach learning and improving when you're either an analytical or intuitive person. I already was trying to do something similar to it but I think the reminder and focus on rapid 'testing'/experimentation with each concept is applicable to most creatives and I feel really motivated after having watched it. Also I'd guess I'm around 65% analytical and 35% intuitive but I seem to become much more intuitive later in the day, which I find can beneficial at times.
 
 ### The first sketchbook page...
 
