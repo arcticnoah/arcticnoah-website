@@ -5,6 +5,8 @@ draft: false
 type: "dailylog"
 focus:
     - break
+    - planning
+    - 2020-august-daily-art-challenge
 ---
 
 ### Taking breaks once a week?

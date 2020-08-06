@@ -38,4 +38,4 @@ I later in the day watched the video, ['Iterative Drawing'](https://www.youtube.
 
 ### The first sketchbook page...
 
-So uh, I didn't manage to do the sketchbook page today... So this means I'm going to have to do 3 tomorrow now! (Since I 'started' this challenge yesterday) I'm still pretty happy with the stuff I did today but I'm still gonna have to up my game to stay on top of it.
+So uh, I didn't manage to do the sketchbook page today... So this means I'm going to have to do 3 tomorrow now! (Since I 'started' this challenge yesterday) I'm still pretty happy with the stuff I did today but I'm still gonna have to up my game to stay on top of it all.
