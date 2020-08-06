@@ -44,7 +44,7 @@ I'll try my best to do it first thing tomorrow and I also know I always struggle
 
 So I haven't setup a plan of things to learn/focus on like I did with the art challenge, although I am planning to do so tomorrow. Today I did manage to finish off a section of my remake of False Noise's track, [Intertwined Forever](https://open.spotify.com/track/1p2sRtYEKiMvkZxSqksMHX?si=hyrREgt2Qo2QfqhJTgoDAw):
 
-{{< audio src="/audio/portfolio/2020-08-august-daily-music-challenge/sketches/sketch1.mp3" position="center" caption="test" >}}
+{{< audio src="/audio/portfolio/2020-08-august-daily-music-challenge/sketches/sketch1.mp3" position="center" >}}
 
 I'd like to start brand new ideas from tomorrow since finishing off a section of something like this doesn't feel like I'm learning too much... That being said, I managed to make a pretty sweet pad!
 
