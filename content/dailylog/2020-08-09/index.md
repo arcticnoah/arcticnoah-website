@@ -11,7 +11,7 @@ focus:
 
 ### Anatomy practice
 
-So after having wasted a lot of time on the macbook, I did the 6 'gesture' drawings but I really focused on making them as good as possible by correcting mistakes (without spending forever on them) today:
+I did the 6 'gesture' drawings but I really focused on making them as good as possible by correcting mistakes (without spending forever on them) today:
 
 {{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-09/gesture-page1.jpg" position="center" >}}
 
