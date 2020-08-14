@@ -16,11 +16,9 @@ focus:
 
 Today, I sadly did the bare minimum of just 6 gesture poses, from [quickposes](https://quickposes.com). This time I made a real focus on ensuring they are visualising the gesture rather than what I was doing before which was contour lines essentially. I am still working on my linework to be less 'scruffy' and rather use singular, continuous lines. I also did these in 2 minutes rather than what I usually do, which was 3.
 
-#### I will upload the photos once I wake up, it just takes too much time for me to do it now as I'm very tired
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-12/gesture-page1.jpg" position="center" >}}
 
-<!-- {{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-12/gesture-page1.jpg" position="center" >}}
-
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-12/gesture-page2.jpg" position="center" >}} -->
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-12/gesture-page2.jpg" position="center" >}}
 
 I watched a bunch of Youtube art vidos today whilst it was unbearably hot in my room (could've used the time to do art elsewhere...), specifically Proko's really insightful 'Asking Pros' series of videos with many artists that I already admire and their various pieces of advice. I watched around 5 of these and now feel much more guided in what direction I should be taking my studies from now on. I also watched the video about Peter Han's approach to imaginative drawing, which was very inspiring and insightful, demonstrating his thought process and that its not some sort of witchcraft (well I'm still not sure on that one :3 ).
 
