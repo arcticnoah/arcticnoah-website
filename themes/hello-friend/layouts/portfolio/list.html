@@ -12,48 +12,17 @@
 		{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
 			<a class="grid-item" href="{{ .RelPermalink }}">
 				<div class="grid-item-cover-container">
-					<!-- {{ if .Params.Cover }}
-						{{ if .Params.UseRelativeCover }}
-							<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="grid-item-cover" />
-						{{ else }}
-							<img src="{{ .Params.Cover | absURL }}" class="grid-item-cover" />
-						{{ end }}
-					{{ end }} -->
+
 					<img src="{{ delimit (slice (printf "%s%s" .Parent.Parent.RelPermalink "portfolio/") (printf $name) (".gif")) "" }}" class="grid-item-cover" />
 				</div>
 				<div class="grid-item-tooltip-position">
 					<div class="grid-item-tooltip-container">
 						<h3 class="grid-item-tooltip-text">{{ humanize $name }}</h3>
-						<!-- <h5 class="grid-item-tooltip-text">{{ .Params.Timespan }}</h5> -->
 					</div>
 				</div>
 			</a>
-			<!-- <div class="categoriesbutton">
-				<a href={{ .RelPermalink }} title="All pages with categories <i>{{$name}}</i>">{{$name}}</a>
-				<sup>{{$cnt}}</sup>
-			</div> -->
 			{{end}}
 		{{end}}
-
-		<!-- {{ range .Pages }}
-		<a class="grid-item" href="{{ .Permalink }}">
-			<div class="grid-item-cover-container">
-				{{ if .Params.Cover }}
-					{{ if .Params.UseRelativeCover }}
-						<img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="grid-item-cover" />
-					{{ else }}
-						<img src="{{ .Params.Cover | absURL }}" class="grid-item-cover" />
-					{{ end }}
-				{{ end }}
-			</div>
-			<div class="grid-item-tooltip-position">
-				<div class="grid-item-tooltip-container">
-					<h3 class="grid-item-tooltip-text">{{ .Params.Title }}</h3>
-					<h5 class="grid-item-tooltip-text">{{ .Params.Timespan }}</h5>
-				</div>
-			</div>
-		</a>
-		{{ end }} -->
 	</div>
 </div>
 {{ end }}

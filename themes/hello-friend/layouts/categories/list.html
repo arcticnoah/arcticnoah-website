@@ -25,21 +25,5 @@
 			{{ end }}
 		</div>	
 	</div>
-	{{ else }}
-	<div class="terms">
-		<h1>Portfolio Categories</h1>
-		<ul class="terms__list">
-			{{range $name, $taxonomy := .Site.Taxonomies.categories}} {{ $cnt := .Count }}
-				{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
-					<li class="terms__term">
-						<a href="/categories/{{ $name }}">
-							#{{ $name }}
-							<span class="terms__term-count">{{ $cnt }}</span>
-						</a>
-					</li>
-				{{end}}
-			{{end}}
-		</ul>
-	</div>
 {{ end }}
 {{ end }}
