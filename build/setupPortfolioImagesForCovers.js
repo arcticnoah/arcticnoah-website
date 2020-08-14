@@ -26,7 +26,7 @@ let categoriesList = [];
 // Create dictionary with categories and the files for it
 for (let fname of files(startPath, ".md")) {
     let meta = getFrontMatter(fs.readFileSync(fname).toString());
-    if (meta.useRelativeCover) {
+    if (!meta.draft && meta.useRelativeCover) {
         for (let x of meta.categories) {
             if (coverImages[x] == null) {
                 coverImages[x] = [fname.slice(0, fname.length - 8) + meta.cover]
@@ -37,6 +37,7 @@ for (let fname of files(startPath, ".md")) {
         }
     }
 }
+
 
 // console.log(coverImages);
 
@@ -55,7 +56,7 @@ fs.mkdirSync(`${buildPath}/temp`);
 let portfolioPath = splitPath.slice(0, splitPath.length - 2).join("/") + "/content/portfolio";
 let portfolioFiles = fs.readdirSync(portfolioPath);
 portfolioFiles.forEach(function(file) {
-    // console.log(file);
+    console.log(file);
     if (file.endsWith(".gif")) {
         fs.unlinkSync(portfolioPath + "/" + file);
     }
