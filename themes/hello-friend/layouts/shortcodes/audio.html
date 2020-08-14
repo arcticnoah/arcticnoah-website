@@ -1,5 +1,5 @@
 {{ if .Get "src" }}
-  <audio preload="auto" width="860" controls="controls" src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="html-audio {{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} type="audio/mp3" ></audio>
+  <audio preload="auto" controls="controls" src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="html-audio {{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} type="audio/mp3" ></audio>
   {{ if .Get "caption" }}
     <p class="content-caption">{{ .Get "caption" }}</p>
   {{ end }}
