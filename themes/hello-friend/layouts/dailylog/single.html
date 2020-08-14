@@ -5,14 +5,7 @@
   
   <div class="post">
 	{{ if ne .Parent.RelPermalink "/" }}
-    <a id="post-breadcrumb" href="javascript:history.back();"></a>
-    <script>
-      item = document.getElementById("post-breadcrumb");
-      pathArray = document.referrer.split("/");
-      if (pathArray.length == 6) {
-        item.text = "Back to " + (pathArray[4].charAt(0).toUpperCase() + pathArray[4].slice(1)) + " Portfolio";
-      }
-    </script>
+    <a id="post-breadcrumb" href="/dailylog">Back to Daily Log</a>
 	{{ end }}
     <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
     <div class="post-meta">
