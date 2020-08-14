@@ -32,6 +32,11 @@
 		margin: 20px 0 !important;
 		width: 100% !important;
 	}
+
+	.post-content > audio, .html-audio {
+		margin: 20px 0 !important;
+		width: 100% !important;
+	}
 }
 
 .logo__mark > .greater-icon > path {
