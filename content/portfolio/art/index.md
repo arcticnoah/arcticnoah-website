@@ -1,0 +1,4 @@
+---
+title: "art"
+layout: "list"
+---

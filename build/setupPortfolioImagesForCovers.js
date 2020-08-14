@@ -52,16 +52,32 @@ if (fs.existsSync(`${buildPath}/temp`)) {
 
 fs.mkdirSync(`${buildPath}/temp`);
 
-// TODO: Remove old gifs in 'content/portfolio' only
+// Delete stuff to start from a clean state
 let portfolioPath = splitPath.slice(0, splitPath.length - 2).join("/") + "/content/portfolio";
 let portfolioFiles = fs.readdirSync(portfolioPath);
 portfolioFiles.forEach(function(file) {
-    console.log(file);
+    // Check for 'category' pages
+    categoriesList.forEach(function(category) {
+        if (file == category) {
+            console.log(`${portfolioPath}/${category}`);
+            fs.rmdirSync(`${portfolioPath}/${category}`, { recursive: true });
+        }
+    });
+    // Check for '.gif's
     if (file.endsWith(".gif")) {
-        fs.unlinkSync(portfolioPath + "/" + file);
+        // console.log(file);
+        fs.unlinkSync(`${portfolioPath}/${file}`);
     }
 });
 
+// Create fake 'category' pages
+categoriesList.forEach(function(category) {
+    fs.mkdirSync(`${portfolioPath}/${category}`);
+    fs.writeFileSync(`${portfolioPath}/${category}/index.md`, `---\ntitle: "${category}"\nlayout: "list"\n---`);
+});
+
+
+// Copy images to temp folder for rendering
 for (let i of categoriesList) {
     let x = 0;
     let tmpPath = `${buildPath}/temp/${i}`;
@@ -74,11 +90,8 @@ for (let i of categoriesList) {
     }
 }
 
-// Images to GIF Process
+// Images to GIF rendering
 for (let i of categoriesList) {
-    // console.log(`gm convert -delay 50 -loop 50 "build/temp/${i}/*.jpg" "content/portfolio/${i}.gif"`);
-    cmd.run(`gm convert -delay 150 -loop 0 -size 750x375 "build/temp/${i}/*.jpg" "content/portfolio/${i}.gif"`);
+    // TODO: Store inside 'category' page folder (update in template too)
+    cmd.run(`gm convert -delay 150 -loop 0 -size 750x375 "build/temp/${i}/*.jpg" "content/portfolio/${i}/cover.gif"`);
 }
-
-// Remove temp stuff
-// fs.rmdirSync(`${buildPath}/temp`, { recursive: true });
