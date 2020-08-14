@@ -28,12 +28,7 @@
 
 /* Tablet */
 @media (max-width: 899px) {
-	.post-content > img, .html-video {
-		margin: 20px 0 !important;
-		width: 100% !important;
-	}
-
-	.post-content > audio, .html-audio {
+	.post-content > img, .html-video, .html-audio {
 		margin: 20px 0 !important;
 		width: 100% !important;
 	}
@@ -139,7 +134,7 @@ em {
 	top: -20px
 }
 
-.post-content > img, .html-video {
+.post-content > img, .html-video, .html-audio {
 	border-radius: 8px;
 	margin: 40px -50px;
 	width: 860px;
@@ -147,16 +142,13 @@ em {
 	box-shadow: 0 12px 40px rgba(0,0,0,.15);
 }
 
-.html-audio {
-	border-radius: 8px;
-	margin: 20px -50px;
-	width: 860px;
-	max-width: 860px;
-	box-shadow: 0 12px 40px rgba(0,0,0,.15);
+.html-video, .html-audio {
+	margin: 20px -50px !important;
 }
 
 .content-caption {
 	text-align: center;
+	margin-top: 0px !important;
 	margin-bottom: 32px;
 	color: var(--light-color-secondary);
 }
