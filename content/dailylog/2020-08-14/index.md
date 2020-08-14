@@ -1,5 +1,5 @@
 ---
-title: "h"
+title: "Reflecting on yesterday's UK results day and working on the site"
 date: 2020-08-14
 draft: false
 type: "dailylog"
