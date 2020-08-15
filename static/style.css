@@ -146,6 +146,141 @@ em {
 	margin: 20px -50px;
 }
 
+.html-audio {
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+	background: var(--light-background-secondary);
+}
+
+.dark-theme .html-audio {
+	background: var(--dark-background-secondary);
+}
+
+.html-audio-play, .html-audio-volume {
+	margin: 10px 16px 11px 16px;
+	height: 16px;
+	color: var(--light-color);
+}
+
+.dark-theme .html-audio-play, .dark-theme .html-audio-volume {
+	color: var(--dark-color);
+}
+
+.html-audio-progress {
+	margin: 20px 0px 16px 0px;
+	width: 684px;
+	height: 4px;
+	border-radius: 2px;
+	background: var(--light-background-secondary);
+}
+
+.dark-theme .html-audio-progress {
+	background: var(--dark-background-secondary);
+}
+
+.html-audio-time {
+	white-space: nowrap;
+	margin: 13px -4px 12px 12px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: var(--light-color);
+}
+
+.dark-theme .html-audio-time {
+	color: var(--dark-color);
+}
+
+input[type=range] {
+	height: 18px;
+	-webkit-appearance: none;
+	margin: 11px 0px 10px 0px;
+	width: 100%;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: var(--accent);
+	border-radius: 2px;
+	border: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	border: 0;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+	background: var(--light-color);
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -4px;
+}
+
+.dark-theme input[type=range]::-webkit-slider-thumb {
+	background: var(--dark-color);
+}
+
+input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	background: var(--accent);
+	border-radius: 2px;
+	border: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+	border: 0;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+	background: var(--light-color);
+	cursor: pointer;
+}
+
+.dark-theme input[type=range]::-moz-range-thumb {
+	background: var(--dark-color);
+}
+
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+.dark-theme input[type=range]::-ms-fill-upper {
+	background: var(--dark-color-secondary);
+}
+
+input[type=range]::-ms-thumb {
+	margin-top: 1px;
+	border: 0;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+	background: var(--light-color);
+	cursor: pointer;
+}
+
+.dark-theme input[type=range]::-ms-thumb {
+	background: var(--dark-color);
+}
+
+input[type="range"]::-moz-range-progress {
+	background-color: var(--accent);
+}
+
 .content-caption {
 	text-align: center;
 	margin-top: 0px !important;
