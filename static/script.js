@@ -21,6 +21,10 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
     let audioTime = audioElements[i].childNodes[5];
     let audioVolumeButton = audioElements[i].childNodes[7];
     let audioSource = audioElements[i].childNodes[9];
+    
+    let audioSourceLengthSeconds = parseInt(audioSource.duration % 60);
+    let audioSourceLengthMinutes = parseInt((audioSource.duration / 60) % 60);
+    let audioSourceLengthHours = parseInt(((audioSource.duration / 60) / 60) % 60);
 
     audioPlayButton.onclick = function() {
         if (audioSource.paused) {
@@ -42,26 +46,36 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
         audioSource.currentTime = 0;
     });
 
-    audioSource.onloadeddata = function() {
+    function setAudioLength() {
         audioSlider.max = audioSource.duration;
-        let seconds = parseInt(audioSource.duration % 60);
-        let minutes = parseInt((audioSource.duration / 60) % 60);
-        audioTime.innerHTML = `00:00 / ${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)}`;
+        if (audioSourceLengthHours > 0) {
+            audioTime.innerHTML = `00:00:00 / ${zeroPad(audioSourceLengthHours, 2)}:${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
+        } else {
+            audioTime.innerHTML = `00:00 / ${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
+        }
     }
+
+    function setCurrentAudioPosition() {
+        let timeStampSplit = audioTime.innerHTML.split(" / ");
+        let seconds = parseInt(audioSource.currentTime % 60);
+        let minutes = parseInt((audioSource.currentTime / 60) % 60);
+        if (audioSourceLengthHours > 0) {
+            let hours = parseInt(((audioSource.currentTime / 60) / 60) % 60);
+            audioTime.innerHTML = `${zeroPad(hours, 2)}:${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)} / ${timeStampSplit[1]}`;
+        } else {
+            audioTime.innerHTML = `${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)} / ${timeStampSplit[1]}`;
+        }
+    }
+
+    audioSource.addEventListener("loadeddata", setAudioLength());
 
     audioSource.ontimeupdate = function() {
         audioSlider.value = audioSource.currentTime;
+        setCurrentAudioPosition();
     }
 
     audioSlider.addEventListener("input", function() {
         audioSource.currentTime = audioSlider.value;
-    });
-
-    audioSource.addEventListener("timeupdate", function() {
-        let seconds = parseInt(audioSource.currentTime % 60);
-        let minutes = parseInt((audioSource.currentTime / 60) % 60);
-        let timeStampSplit = audioTime.innerHTML.split(" / ");
-        audioTime.innerHTML = `${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)} / ${timeStampSplit[1]}`;
     });
 
     audioVolumeButton.onclick = function() {

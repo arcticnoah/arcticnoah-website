@@ -29,8 +29,9 @@
 /* Tablet */
 @media (max-width: 899px) {
 	.post-content > img, .html-video, .html-audio, .embla {
-		margin: 20px 0px !important;
+		margin: 40px 0px !important;
 		width: 100% !important;
+		/* margin: 40px -50px; */
 	}
 }
 
@@ -319,7 +320,8 @@ input[type="range"]::-moz-range-progress {
 	display: flex;
 	list-style: none;
 	justify-content: center;
-	margin-bottom: 10px;
+	margin-top: -10px;
+	margin-bottom: 20px;
 }
   
 .embla__dot {
