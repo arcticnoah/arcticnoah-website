@@ -16,17 +16,17 @@ focus:
 
 So I set out to do around 10 gesture draws a day and I think I'll continue to do so for a while (even after this week) since I'm feeling slowly more confident in my line making and general accuracy.
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page1.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page1.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page2.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page2.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page3.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page3.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page4.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/gesture-page4.jpg" >}}
 
 I then watched the next video in Proko's Figure drawing course which was focused on using boxes to create the torso 'bean' which I found significantly more comfortable and 'easier' than the more 'organic'/natural form of the standard 'bean'.
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/robo-bean-page1.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-07/robo-bean-page1.jpg" >}}
 
 This is most likely because I've done the first lesson of Draw-a-Box and the 250 box challenge which definitely improved my confidence in perspective and general box drawing.
 
@@ -34,7 +34,7 @@ This is most likely because I've done the first lesson of Draw-a-Box and the 250
 
 So today I watched a music course focused on general production despite this week meaning to be focused on drum programming. I tried to apply some of the knowledge from the course into today's sketch which I had an early draft of but decided to reuse it and add more elements to it.
 
-{{< audio src="/audio/portfolio/2020-08-august-daily-music-challenge/sketches/sketch2.mp3" position="center" >}}
+{{< audio src="/audio/portfolio/2020-08-august-daily-music-challenge/sketches/sketch2.mp3" >}}
 
 ### Sketchbook
 

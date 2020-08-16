@@ -1,12 +1,5 @@
-<!-- {{ if .Get "src" }}
-  <audio preload="auto" controls="controls" src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="html-audio {{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} type="audio/mp3" ></audio>
-  {{ if .Get "caption" }}
-    <p class="content-caption">{{ .Get "caption" }}</p>
-  {{ end }}
-{{ end }} -->
-
 {{ if .Get "src" }}
-  <div class="html-audio">
+  <div class="html-audio center">
     <a class="html-audio-play"><span class="oi" data-glyph="media-play" title="media-play" aria-hidden="true"></a>
     <input class="html-audio-progress" type="range" step="0" value="0" min="0" max="100">
     <p class="html-audio-time">0:00 / 0:00</p>

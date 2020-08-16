@@ -4,12 +4,13 @@ date: 2020-08-14
 draft: false
 type: "dailylog"
 focus:
-    - 2020-august-daily-art-challenge
-    - 2020-august-daily-music-challenge
-    - art
-    - traditional-art
-    - music
-    - music-production
+    - uk
+    - education
+    - programming
+    - web-development
+    - personal-website
+    - graphic-design
+    - diy
 ---
 
 ### Yesterday's UK A-Level results day

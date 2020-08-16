@@ -20,11 +20,11 @@ So I headed out into the local woods were it was much cooler for about 2-3 hours
 
 I'll be honest, I had no clue what I'm doing and its super hard to read or even understand what my storyboard is trying to communicate but I understand whats meant to be happening so at least its good enough for me :P
 
-{{< image src="/img/portfolio/2020-11-self-learning-art-project/notes/2020-08-06/storyboard-practice.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-11-self-learning-art-project/notes/2020-08-06/storyboard-practice.jpg" >}}
 
 I also tried some story planning but didn't really get too far as I wrote the plot for the current frames I had created from the storyboard but didn't really think much further than that from a plot perspective.
 
-{{< image src="/img/portfolio/2020-11-self-learning-art-project/notes/2020-08-06/story-planning-practice.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-11-self-learning-art-project/notes/2020-08-06/story-planning-practice.jpg" >}}
 
 Once I got back from the woods, I watched a great video by Tyler Mowery, called '[How to Write a Short Film](https://www.youtube.com/watch?v=wMqIQcTMlA0)', which I feel explained how to write a good plot very well and also had a great example short film to compliment and demonstrate the points he was making. After having watched it, I feel much more direction in how to approach the story but I still need to figure out a great plot since I don't want to invest a large amount of time into a plot I don't feel much attachment/belief in.
 

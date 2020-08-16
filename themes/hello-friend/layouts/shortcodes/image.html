@@ -1,5 +1,11 @@
 {{ if .Get "src" }}
-  <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
+  {{ if .Get "slide" }}
+    <div class="carousel-slide-container">
+      <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="carousel-slide-content {{ with .Get "class"}}{{ . }}{{ else -}} center {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
+    </div>
+  {{ else }}
+    <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "class"}}{{ . }}{{ else -}} center {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
+  {{ end }}
   {{ if .Get "caption" }}
     <p class="content-caption">{{ .Get "caption" }}</p>
   {{ end }}

@@ -17,8 +17,8 @@ It wasn't an issue until I wanted to add a contact form today that would (ideall
 
 What I did manage to do today was to setup the 'front-end' of the contact section as you can see here:
 
-{{< image src="contact-section.png" position="center" caption="Current version of the contact section">}}
+{{< image src="contact-section.png" caption="Current version of the contact section">}}
 
-{{< image src="form-confirmation.png" position="center" caption="Confirmation page for form submission">}}
+{{< image src="form-confirmation.png" caption="Confirmation page for form submission">}}
 
 I'm hoping to finish the contact page tomorrow and start working on my other 2 projects since they're being neglected currently.

@@ -19,19 +19,19 @@ Essentially the problem is that the original charging port had melted one of the
 
 So after having wasted a lot of time on the macbook, I did the 10 'gesture' drawings for today:
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page1.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page1.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page2.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page2.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page3.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page3.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page4.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/gesture-page4.jpg" >}}
 
 ### Copying from reference
 
 And because I was being lazy from earlier, I tried to copy [this reference drawing](https://www.instagram.com/p/BzycVXunZ_U/), which has this painterly look that I'm a massive fan of.
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/copied-drawing-page1.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-08/copied-drawing-page1.jpg" >}}
 
 I need to learn to draw from inspiration and I know that to do that I need to work from reference but what I've done is not work from reference but rather just plainly copy it.
 

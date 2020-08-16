@@ -20,19 +20,19 @@ In the 'experimental' branch of the site, I had setup Google Analytics support a
 
 So for around 1-2 hours today, I watched some of Proko's amazing videos on [figure drawing](https://www.youtube.com/playlist?list=PLtG4P3lq8RHGuMuprDarMz_Y9Fbw_d2ws). I then did around 1 hour of gesture drawing practise exercise with the website, [quickposes](https://quickposes.com), as you can see here:
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page1.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page1.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page2.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page2.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page3.jpg" position="center" caption="Each of these gestures were done with a 3 minute time limit" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page3.jpg" caption="Each of these gestures were done with a 3 minute time limit" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page4.jpg" position="center" caption="Except the first one, these gestures were done with a 45 second time limit" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/gesture-page4.jpg" caption="Except the first one, these gestures were done with a 45 second time limit" >}}
 
 I also managed to do 2 pages of the 'bean' practise exercise today, as you can see here:
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/bean-page1.jpg" position="center" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/bean-page1.jpg" >}}
 
-{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/bean-page2.jpg" position="center" caption="Each of these 'beans' were done with a 45 second time limit" >}}
+{{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-04/bean-page2.jpg" caption="Each of these 'beans' were done with a 45 second time limit" >}}
 
 I later in the day watched the video, ['Iterative Drawing'](https://www.youtube.com/watch?v=k0ufz75UvHs) by Sycra, which I found to be a very relatable video on how to approach learning and improving when you're either an analytical or intuitive person. I already was trying to do something similar to it but I think the reminder and focus on rapid 'testing'/experimentation with each concept is applicable to most creatives and I feel really motivated after having watched it. Also I'd guess I'm around 65% analytical and 35% intuitive but I seem to become much more intuitive later in the day, which I find can beneficial at times.
 

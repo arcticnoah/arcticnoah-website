@@ -20,7 +20,7 @@ TODO: video?
 
 TODO: instead of a giant audio list, add audio box with different options (grid, list, carousal)
 
-{{< audio src="/audio/portfolio/2020-08-august-daily-music-challenge/sketches/sketch1.mp3" position="center" caption="Remade section of the song, 'Intertwined Forever' by 'False Noise'" >}}
+{{< audio src="/audio/portfolio/2020-08-august-daily-music-challenge/sketches/sketch1.mp3" caption="Remade section of the song, 'Intertwined Forever' by 'False Noise'" >}}
 
 ### Drafts/Sketches
 
