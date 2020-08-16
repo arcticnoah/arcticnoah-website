@@ -81,7 +81,7 @@ let emblaElements = document.getElementsByClassName("embla-wrapper");
 
 for (let i = 0, len = emblaElements.length; i < len; i++) {
     let emblaNode = emblaElements[i].childNodes[1];
-    let embla = EmblaCarousel(emblaNode, { loop: false});
+    let embla = EmblaCarousel(emblaNode, { loop: true});
 
     function setupDotBtns(dotsArray, embla) {
         dotsArray.forEach((dotNode, i) => {
@@ -111,33 +111,9 @@ for (let i = 0, len = emblaElements.length; i < len; i++) {
     setupDotBtns(dotsArray, embla);
     embla.on("select", setSelectedDotBtn);
 }
-// let emblaNode = document.getElementById("embla");
-// let embla = EmblaCarousel(emblaNode, { loop: false});
 
-// function setupDotBtns(dotsArray, embla) {
-//     dotsArray.forEach((dotNode, i) => {
-//         dotNode.addEventListener("click", () => embla.scrollTo(i), false);
-//     });
-// }
 
-// function generateDotBtns(dots, embla) {
-//     const template = document.getElementById("embla-dot-template").innerHTML;
-//     dots.innerHTML = embla.scrollSnapList().reduce(acc => acc + template, "");
-//     let array = [].slice.call(dots.querySelectorAll(".embla__dot"));
-//     array[0].classList.add("is-selected");
-//     return array;
-// };
-
-// const selectDotBtn = (dotsArray, embla) => () => {
-//     let previous = embla.previousScrollSnap();
-//     let selected = embla.selectedScrollSnap();
-//     dotsArray[previous].classList.remove("is-selected");
-//     dotsArray[selected].classList.add("is-selected");
-// };
-
-// const dots = document.querySelector(".embla__dots");
-// const dotsArray = generateDotBtns(dots, embla);
-// const setSelectedDotBtn = selectDotBtn(dotsArray, embla);
-
-// setupDotBtns(dotsArray, embla);
-// embla.on("select", setSelectedDotBtn);
+// Image zoom
+mediumZoom('[data-zoomable]', {
+    margin: 20
+});

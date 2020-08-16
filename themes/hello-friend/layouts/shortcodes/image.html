@@ -1,10 +1,10 @@
 {{ if .Get "src" }}
   {{ if .Get "slide" }}
     <div class="carousel-slide-container">
-      <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="carousel-slide-content {{ with .Get "class"}}{{ . }}{{ else -}} center {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
+      <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="carousel-slide-content {{ with .Get "class"}}{{ . }}{{ else -}} center {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} data-zoomable />
     </div>
   {{ else }}
-    <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "class"}}{{ . }}{{ else -}} center {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
+    <img src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "class"}}{{ . }}{{ else -}} center {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} data-zoomable />
   {{ end }}
   {{ if .Get "caption" }}
     <p class="content-caption">{{ .Get "caption" }}</p>
