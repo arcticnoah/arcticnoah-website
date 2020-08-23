@@ -21,10 +21,8 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
     let audioTime = audioElements[i].childNodes[5];
     let audioVolumeButton = audioElements[i].childNodes[7];
     let audioSource = audioElements[i].childNodes[9];
-    
-    let audioSourceLengthSeconds = parseInt(audioSource.duration % 60);
-    let audioSourceLengthMinutes = parseInt((audioSource.duration / 60) % 60);
-    let audioSourceLengthHours = parseInt(((audioSource.duration / 60) / 60) % 60);
+
+    let audioSourceLengthSeconds, audioSourceLengthMinutes, audioSourceLengthHours;
 
     audioPlayButton.onclick = function() {
         if (audioSource.paused) {
@@ -48,6 +46,11 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
 
     function setAudioLength() {
         audioSlider.max = audioSource.duration;
+
+        audioSourceLengthSeconds = parseInt(audioSource.duration % 60);
+        audioSourceLengthMinutes = parseInt((audioSource.duration / 60) % 60);
+        audioSourceLengthHours = parseInt(((audioSource.duration / 60) / 60) % 60);
+
         if (audioSourceLengthHours > 0) {
             audioTime.innerHTML = `00:00:00 / ${zeroPad(audioSourceLengthHours, 2)}:${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
         } else {
