@@ -6,6 +6,9 @@ type: "dailylog"
 focus:
     - reflecting
     - vent
+    - programming
+    - web-development
+    - personal-website
 ---
 
 ### I hardly ever have 'real' motivation
@@ -31,10 +34,6 @@ I worked on the site some more today, I improved some styling stuff such as a ne
 
 {{< image src="website-audio-player.png" caption="Audio player changes, added the accent as a border to the slider thumb" >}}
 
-{{< video src="website-hover" caption="Portfolio hover changes, add the accent overlay and easing changes" >}}
+{{< video src="website-hover" autoplay="true" loop="true" muted="true" controls="false" caption="Portfolio hover changes, add the accent overlay and easing changes (low res example)" >}}
 
-{{< image src="website-selection.png" caption="Selection changes, originally used the browser's default, now it is themed (low res image)" >}}
-
-### Productivity status
-
-...
+{{< image src="website-selection.png" caption="Selection changes, originally used the browser's default, now it is themed (low res example)" >}}
