@@ -6,6 +6,7 @@ type: "dailylog"
 focus:
     - uk
     - education
+    - rant
     - programming
     - web-development
     - personal-website
