@@ -13,16 +13,35 @@
 
 # Versions:
 
-Currently Hosted Version: **v1.1** (master)
+Currently Hosted Version: **v1.2** (master)
 
-Experimental Version: **v1.2-alpha** (experimental)
+Experimental Version: **v1.3-alpha** (experimental_1.3)
 
 # Changelog:
 
-- **v1.2-alpha**
+- **v1.2**
     - Contact section has been added.
         - Includes a list of my social media links.
         - Email form has been added, lets users send an 'email' to me directly without revealing my email publicly.
+    - Image carousels widget has been added.
+        - Lets multiple images be present via a slideshow, in a single space.
+        - Using the library: [embla-carousel](https://github.com/davidcetinkaya/embla-carousel), to add this feature.
+    - Image zooming has been added.
+        - Images can be viewed in fullscreen now by clicking/tapping any content image.
+        - Using the library: [medium-zoom](https://github.com/francoischalifour/medium-zoom), to add this feature.
+    - Custom audio player widget has been added.
+        - Consistent style across browsers and devices.
+        - Has the most common/important features of a browser audio player.
+        - Auto pausing of other audio sources when a new one starts to play.
+    - Updated style sheet.
+        - New, improved contrast, dark theme.
+        - Selection highlighting with accent colour.
+        - Improved drop shadow by reducing its 'spread' and adjusting it for the dark theme.
+    - Small adjustments:
+        - Portfolio section stays on the URL path '/portfolio' only now, rather than sometimes using '/categories' (due to Hugo taxonomies).
+    - Bug fixes:
+        - Fixed some breadcrumb inconsistencies.
+        - Mobile scaling should be more consistent now.
 <br><br>
 - **v1.1**
     - Portfolio section has been added.
@@ -39,7 +58,7 @@ Experimental Version: **v1.2-alpha** (experimental)
         - Blog section is present.
     - Website hosting done with [Netlify](https://netlify.com) (free tier).
         - Added [Forestry.io](https://Forestry.io) as an option for remote editing of the site's content.
-
+<br><br>
 # Planned Features:
 
 - Contact Page/Form
