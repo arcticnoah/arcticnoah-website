@@ -3,3 +3,6 @@
 
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.70.0"
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.70.0"

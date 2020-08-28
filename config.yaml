@@ -8,6 +8,7 @@ theme:
   - hugo-video
   - hello-friend
 paginate: 5
+metaDataFormat: "yaml"
 
 # Uncomment below to add 'Disqus' section to blog posts
 # disqusShortname: "arcticnoah"

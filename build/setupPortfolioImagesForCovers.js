@@ -45,6 +45,7 @@ let buildPath = splitPath.slice(0, splitPath.length - 1).join("/");
 
 
 // Clean up before running
+// TODO: Remove old gifs in 'content/portfolio' only
 
 if (fs.existsSync(`${buildPath}/temp`)) {
     fs.rmdirSync(`${buildPath}/temp`, { recursive: true });
