@@ -1,5 +1,5 @@
 ---
-title: "Starting A Daily Log"
+title: "Starting a Daily Log"
 date: 2020-07-22T11:21:04+01:00
 draft: false
 cover: "cover.jpg"

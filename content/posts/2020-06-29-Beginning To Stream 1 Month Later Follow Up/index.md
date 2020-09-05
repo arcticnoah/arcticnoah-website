@@ -1,5 +1,5 @@
 ---
-title: "Beginning To Stream (1 Month Later) Follow Up"
+title: "Beginning to Stream (1 Month Later) Follow Up"
 date: 2020-06-29T15:23:13+01:00
 draft: false
 cover: "cover.jpg"

@@ -1,5 +1,5 @@
 ---
-title: "Beginning To Stream"
+title: "Beginning to Stream"
 date: 2020-06-01T11:38:34+01:00
 draft: false
 cover: "cover.jpg"
