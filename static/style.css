@@ -145,6 +145,11 @@ em {
 	box-shadow: none;
 }
 
+.post-content > p, .post-content > ul {
+	margin-top: 24px !important;
+	margin-bottom: 24px !important;
+}
+
 .post-content > img, .html-video, .html-audio, .embla {
 	border-radius: 8px;
 	margin: 40px -50px;
