@@ -61,6 +61,5 @@ Experimental Version: **v1.3-alpha** (experimental_1.3)
 <br><br>
 # Planned Features:
 
-- Contact Page/Form
 - Commission Section/Form
 - CV/Resume
