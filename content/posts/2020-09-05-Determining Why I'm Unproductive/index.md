@@ -1,5 +1,5 @@
 ---
-title: "Determining why I'm unproductive"
+title: "Determining why I'm unproductive (and why I'm taking a break)"
 date: 2020-09-05T12:15:02+01:00
 draft: false
 cover: "cover.jpg"

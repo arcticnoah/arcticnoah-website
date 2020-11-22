@@ -8,6 +8,7 @@ tags:
     - goal
     - project
     - announcement
+    - project-announcement
     - 4+-track-ep-project
     - animated-short-film-project
 ---

@@ -31,7 +31,8 @@
 	.post-content > img,
 	.html-video,
 	.html-audio,
-	.embla {
+	.embla,
+	.youtube-embed {
 		margin: 40px 0px !important;
 		width: 100% !important;
 		/* margin: 40px -50px; */
@@ -159,7 +160,8 @@ em {
 .post-content > img,
 .html-video,
 .html-audio,
-.embla {
+.embla,
+.youtube-embed {
 	border-radius: 8px;
 	margin: 40px -50px;
 	width: 860px;
@@ -414,8 +416,8 @@ form textarea {
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
-	max-width: 100%;
-	border-radius: 8px;
+	/* max-width: 100%; */
+	/* border-radius: 8px; */
 }
 
 .youtube-embed iframe,
