@@ -2,7 +2,7 @@
 # google search guide: https://support.google.com/webmasters/answer/9274190
 
 baseurl: 'https://arcticnoah.consulting'
-title: arcticnoah | Site
+title: "Site :: arcticnoah"
 languageCode: en-us
 theme:
   - hugo-video
@@ -13,8 +13,6 @@ metaDataFormat: "yaml"
 # Uncomment below to add 'Disqus' section to blog posts
 # disqusShortname: "arcticnoah"
 
-googleAnalytics: true
-
 params:
   # dir name of your blog content (default is `content/posts`)
   contentTypeName: posts
@@ -23,7 +21,7 @@ params:
   defaultTheme: light
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems: 4
+  showMenuItems: 5
 
   # Show reading time in minutes for posts
   showReadingTime: false
@@ -62,18 +60,23 @@ languages:
     
     menu:
       main:
-        - identifier: about
-          name: About
-          url: /
+        - identifier: portfolio
+          name: Portfolio
+          url: /portfolio
+          weight: 1
         - identifier: blog
           name: Blog
           url: /blog
+          weight: 2
         - identifier: dailylog
           name: Daily Log
           url: /dailylog
-        # - identifier: portfolio
-        #   name: Portfolio
-        #   url: /portfolio
+          weight: 3
+        - identifier: about
+          name: About
+          url: /
+          weight: 4
         - identifier: contact
           name: Contact
           url: /contact
+          weight: 5
