@@ -35,7 +35,7 @@
       </span>
     {{ end }}
 
-    {{ if .Params.Cover }}
+    {{ if and .Params.Cover (not .Params.hideCover) }}
       {{ if .Params.UseRelativeCover }}
         <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
       {{ else }}
