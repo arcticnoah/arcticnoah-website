@@ -1,7 +1,7 @@
 ---
 title: "Starting this back up!"
 date: 2021-01-12
-draft: false
+draft: true
 type: "dailylog"
 focus:
     - personal-website
