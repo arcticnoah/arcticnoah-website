@@ -2,11 +2,11 @@
 <div class="archive">
 	{{ if ne .Parent.RelPermalink "/" }}
 		<a href="{{ .Parent.RelPermalink }}">Back to Portfolio Categories</a>
-		<h1>{{ humanize .Title }} Portfolio</h1>
+		<h1 class="capitalize">{{ humanize .Title }} Portfolio</h1>
 
 		<div class="grid-container">
 		{{ range (index .Site.Taxonomies.categories .Title) }}
-			<a class="grid-item" href="{{ .RelPermalink }}">
+			<a class="grid-item simulate-hover" href="{{ .RelPermalink }}">
 				<div class="grid-item-cover-container">
 					{{ if .Params.Cover }}
 						{{ if .Params.UseRelativeCover }}
@@ -31,14 +31,14 @@
 		<div class="grid-container">
 			{{ range $name, $taxonomy := .Site.Taxonomies.categories }} {{ $cnt := .Count }}
 			{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
-				<a class="grid-item" href="/portfolio/{{ $name }}">
+				<a class="grid-item simulate-hover" href="/portfolio/{{ $name }}">
 					<div class="grid-item-cover-container">
 
 						<img src="{{ delimit (slice (printf "%s%s" .Parent.Parent.RelPermalink "portfolio/") (printf $name) ("/cover.gif")) "" }}" class="grid-item-cover" />
 					</div>
 					<div class="grid-item-tooltip-position">
 						<div class="grid-item-tooltip-container">
-							<h3 class="grid-item-tooltip-text">{{ humanize $name }}</h3>
+							<h3 class="grid-item-tooltip-text capitalize">{{ humanize $name }}</h3>
 						</div>
 					</div>
 				</a>

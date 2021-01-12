@@ -5,16 +5,16 @@
   
   <div class="post">
 	{{ if ne .Parent.RelPermalink "/" }}
-    <a id="post-breadcrumb" href="javascript:history.back();"></a>
+    <!-- <a id="post-breadcrumb" href="javascript:history.back();"></a>
     <script>
       item = document.getElementById("post-breadcrumb");
       pathArray = document.referrer.split("/");
       if (pathArray.length == 6) {
         item.text = "Back to " + (pathArray[4].charAt(0).toUpperCase() + pathArray[4].slice(1)) + " Portfolio";
       }
-    </script>
+    </script> -->
 	{{ end }}
-    <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+    <h1 class="post-title">{{ .Title | markdownify }}</h1>
     <div class="post-meta">
       {{ if .Date | default nil }}
         <span class="post-date">
@@ -36,8 +36,9 @@
 
     {{ if .Params.categories }}
       <span class="post-categories">
+        <!-- Categories: -->
         {{ range .Params.categories }}
-          #<a href="{{ (urlize (printf "categories/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
+          #<a href="{{ (urlize (printf "portfolio/%s" . )) | absURL }}/">{{ . }}</a>&nbsp;
         {{ end }}
       </span>
     {{ end }}

@@ -57,11 +57,13 @@
       {{ end }}
 
       {{ if .Params.Cover }}
-        {{ if .Params.UseRelativeCover }}
-          <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
-        {{ else }}
-          <img src="{{ .Params.Cover | absURL }}" class="post-cover" />
-        {{ end }}
+        <a href="{{ .RelPermalink }}">
+          {{ if .Params.UseRelativeCover }}
+            <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" class="post-cover" />
+          {{ else }}
+            <img src="{{ .Params.Cover | absURL }}" class="post-cover" />
+          {{ end }}
+        </a>
       {{ end }}
 
       <div class="post-content">

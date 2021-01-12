@@ -16,6 +16,15 @@
         {{ range where .Pages "Type" $contentTypeName }}
         {{ if eq .Kind "page" }}
         <div class="archive__post">
+          {{ if .Params.Cover }}
+            <a href="{{ .Permalink }}">
+              {{ if .Params.UseRelativeCover }}
+                <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}" class="blog-post-cover"/>
+              {{ else }}
+                <img src="{{ .Params.Cover | absURL }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}" class="blog-post-cover"/>
+              {{ end }}
+            </a>
+          {{ end }}
           <h3 class="archive__post-title"><a
               href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
           </h3>

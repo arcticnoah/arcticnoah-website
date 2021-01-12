@@ -130,7 +130,43 @@ for (let i = 0, len = emblaElements.length; i < len; i++) {
 }
 
 
+// Currently disabled as it makes carousels pretty annoying to use
 // Image zoom
-mediumZoom('[data-zoomable]', {
-    margin: 20
-});
+// mediumZoom('[data-zoomable]', {
+//     margin: 20
+// });
+
+
+// Mobile 'hover'-like support
+window.onresize = function (event) {
+    checkClientWidth();
+};
+
+function checkClientWidth() {
+    width = document.body.clientWidth;
+    
+    if (width <= 899) {
+        setupIntersectionObserver(1);
+        window.onresize = null; // Remove event
+    }
+}
+
+// thresholdValue: 0.00 to 1.00 => 0% to 100% visible
+function setupIntersectionObserver(thresholdValue) {
+    const mobileHoverItems = document.querySelectorAll(".simulate-hover");
+    const intersectionObserver = window.IntersectionObserver;
+    
+    const observer = new intersectionObserver((items) =>
+        items.forEach(({ isIntersecting, target }) => {
+            if (isIntersecting && !target.classList.contains("simulate-hover-active")) {
+                target.classList.add("simulate-hover-active");
+            } else if (!isIntersecting && target.classList.contains("simulate-hover-active")) {
+                target.classList.remove("simulate-hover-active");
+            }
+        }), { threshold: thresholdValue, rootMargin: '-10% 0px' }
+    );
+    
+    mobileHoverItems.forEach((element) => observer.observe(element));
+}
+
+checkClientWidth();

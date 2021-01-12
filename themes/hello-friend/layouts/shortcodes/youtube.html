@@ -6,3 +6,6 @@
 		allowfullscreen
 	></iframe>
 </div>
+{{ if .Get "caption" }}
+	<p class="content-caption">{{ .Get "caption" }}</p>
+{{ end }}
