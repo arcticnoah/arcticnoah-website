@@ -9,7 +9,7 @@ focus:
     - personal-website
 ---
 
-### Heyo, welcome to the *first* daily log!
+## Heyo, welcome to the *first* daily log!
 
 So today I've been mostly doing some maintenance on this very site by organising the Github repo, which is private currently, but I plan to make it public soon!
 

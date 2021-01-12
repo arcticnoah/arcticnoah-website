@@ -21,7 +21,7 @@ Now, I have been trying to simply accept that I'm not at the level I'd quite lik
 
 Which leads me on to my lack of: *Goals*. This is likely the most impactful problem I'm facing right now, since I'm now taking a gap year, which leaves me with the perfect opportunity to potentially really improve at something but since I haven't really had an end goal of some sorts, this is causing me to almost freeze from options on how to spend my time. I want to spend some time figuring out at least some vague ideas of what I want from myself in the coming years, almost like self imposed milestones.
 
-### So now what?
+## So now what?
 
 I've tried to keep posting to the [daily log](/dailylog/) for the past month, but I've started to become **very** lazy with it, as it does indeed take some time and effort. That being said however, I'm not willing to give up on it just yet but I will be taking a break from it for a while. I also started a 'Daily Art + Music challenge' for August, but sadly it failed considerably after less than 10 days, partially due to results day here in the UK ruining my confidence in myself but also because I just stopped having an interest in it for whatever reason.
 

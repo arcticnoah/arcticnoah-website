@@ -11,7 +11,7 @@ focus:
     - personal-website
 ---
 
-### I hardly ever have 'real' motivation
+## I hardly ever have 'real' motivation
 
 Firstly, I didn't mean to take a 3 day break from the daily log but I just haven't achieved or even really done anything on those days. I managed to keep my maths revision up and streaming but thats pretty much been it. I've been thinking about this for the last few years and I'm no closer to really coming up with a way to deal with it, but I simply have no motivation to really do anything for the last 3-4 years. I used to be pretty excited to do things like playing video games, creating stuff (even if it wasn't amazing), relaxing when I felt tired, yet nowadays I struggle with working up the energy to just do things.
 
@@ -25,7 +25,7 @@ If I had to guess how long the positive mindset can last, if it wouldn't have be
 
 At the moment, I feel like I'm entering the depressive state and I'm doing everything I can to try and prevent that by continuing to make stuff, despite my lack of motivation but it almost feels like its making it worse.
 
-### Vent over, what've I done today?
+## Vent over, what've I done today?
 
 I worked on the site some more today, I improved some styling stuff such as a new 'darker' dark theme, updates to the audio player widgets, improved hovering for the portfolio section and a selection colour 
 (left is the original, right is the new version!):

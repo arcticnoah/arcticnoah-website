@@ -9,7 +9,7 @@ tags:
     - dailylog
 ---
 
-### What is a 'Daily Log'?
+## What is a 'Daily Log'?
 
 A daily log is going to be my version of a diary but with a focus on what I've been up to in the day. I was quite inspired by various development logs, and since I want this to be more of a daily thing and kinda just focus on whatever I've done, I decided to call it a daily log :P
 

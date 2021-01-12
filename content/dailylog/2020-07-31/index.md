@@ -9,7 +9,7 @@ focus:
     - personal-website
 ---
 
-### Trying to add a contact form to a static site
+## Trying to add a contact form to a static site
 
 Originally when I started learning about Hugo and static sites in general a few months ago, I didn't think too much about the downsides that it can have, such as no dedicated backend-server for API requests (which makes the overall site simpler to manage however).
 

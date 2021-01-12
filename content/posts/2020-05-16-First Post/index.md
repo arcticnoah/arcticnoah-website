@@ -8,11 +8,11 @@ tags:
     - announcement
 ---
 
-### Welcome to the first ever blog post here!  
+## Welcome to the first ever blog post here!  
   
 I'm super excited to finally have an actual site that isn't just a simple landing page.
 
-### How did I make this site?
+## How did I make this site?
 
 I used the web framework, [Hugo](https://gohugo.io/), and the theme, [hello-friend](https://github.com/panr/hugo-theme-hello-friend/), as a basis. I only started using it all today, so I'm very new to it all but I'm really enjoying the possibilities and workflow so far!
 

@@ -14,7 +14,7 @@ focus:
     - diy
 ---
 
-### Yesterday's UK A-Level results day
+## Yesterday's UK A-Level results day
 
 So, yesterday in the UK was results day for students who were studying for A-Levels, myself included. However, due to COVID-19, the government and Ofqual decided to call off the exams to let our unfortunate teachers help decide our fate. The whole process was already seemingly flawed since we had practically no control anymore over what would happen. Now, just before results day, there was a report that 39% of all A-Level grades had been downgraded from what our teachers had provided, this led to heavy uproar and even managed to revert this in Scotland but not here in England (hopefully this can still change, but it's unlikely given this government sadly).
 
@@ -30,7 +30,7 @@ I'm just completely baffled how *any* of this is allowed to happen but I know th
 
 So what is my current plan? I'm still writing emails to my school for potentially doing resits for mathematics (depending on the cost) but in the meantime, I'll be working on my portfolio of projects (which I need to super seriously step up my game with), start revising for my maths exams in October and just figure out a way to get out of this country before its too late. Apologies for the political vent section here but I genuinely find this whole thing ridiculous and simply wanted to get my situation and opinion out there.
 
-### Website
+## Website
 
 Today I set out to work on some pending todo tasks and I'm glad to say that I managed to fix 6 of these! I did the following changes/fixes:
 
@@ -47,7 +47,7 @@ These changes took around 3 hours to do but I'm pretty happy with the results as
 
 I'll begin working on the working, code version of this tomorrow and I'm also starting to finalise version 1.2 of this site, so that's exciting!
 
-### Nintendo Switch Controllers
+## Nintendo Switch Controllers
 
 So I've owned a Nintendo Switch since December 2018 and I've been absolutely loving it. I've been trying my best to keep it clean and generally looking after it, but just like various other people, I eventually started to have the infamous joy-con drift back in late 2019. I tried to fix it without buying anything but I eventually decided to buy a fake Pro Controller of AliExpress for around £18. Its been working great, especially for the insane price point up until May this year, when the left joystick started drifting as well.
 
@@ -55,6 +55,6 @@ This led me to try fixing my joysticks rather than buying new ones (since the ge
 
 I had been waiting for the joy-con joysticks to arrive until today when I finally could fix them, only to find that 1 of the 4 screws to open the joy-cons were stripped (scrapped away to the point when its practically impossible to unscrew them). I feel incredibly unlucky that this has happened, I tried various techniques to overcome it but I'm kinda stuck what to do now. I'll try looking for more answers tomorrow but I'm pretty bummed about it :(
 
-### Art and music practice
+## Art and music practice
 
 I didn't do anything productive yesterday due to the results day ruining my day from an emotional standpoint and also requiring a lot of work to be done with filling forms and constant back and forth with my school via emails. I'm going to continue again tomorrow with much more practice.

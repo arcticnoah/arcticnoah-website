@@ -10,7 +10,7 @@ focus:
     - organising
 ---
 
-### Update the site to v1.2!
+## Update the site to v1.2!
 
 Today I managed to merge the 'experimental' branch into the 'master' (public) branch of the site and that means its now live! Heres a changelog of the update:
 
@@ -38,7 +38,7 @@ Today I managed to merge the 'experimental' branch into the 'master' (public) br
         - Fixed some breadcrumb inconsistencies.
         - Mobile scaling should be more consistent now.
 
-### Time tracking analysis
+## Time tracking analysis
 
 Last week, I managed to track 6 out of 7 days pretty accurately with the tool, [Toggl](https://toggl.com) and I knew they had a CSV export feature but I also found their PDF export feature which includes a nice detailed pie chart and list of how I spent my time those 6 days, as you can see below:
 

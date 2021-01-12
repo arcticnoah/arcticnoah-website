@@ -7,11 +7,11 @@ focus:
     - reflecting
 ---
 
-### What does my current routine look like?
+## What does my current routine look like?
 
 So I've been reading and watching a bunch of creatives from different backgrounds and a common thing I've noticed is that they all have some kind of routine that encourages them to try and create something everyday. Now this isn't anything new to me, but I think especially today, I came to the realisation that I simply don't do this enough. In fact, my current routine just *doesn't exist*.
 
-### What would an ideal routine be?
+## What would an ideal routine be?
 
 Well I'm not sure there is a single routine that would work for everyone but what I've commonly seen are mostly routines that:
 

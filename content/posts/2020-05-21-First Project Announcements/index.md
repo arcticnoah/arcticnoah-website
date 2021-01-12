@@ -13,7 +13,7 @@ tags:
     - animated-short-film-project
 ---
 
-### Firstly, what is a 'project'?
+## Firstly, what is a 'project'?
 
 A project is an idea with a set objective/goal in mind. For example, a project could focus on improving to cook and the end goal could be to creating a completely original recipe. Over the last few years, I've tried setting myself these kinds of goals with various hobbies but often feel more frustrated/stuck with my progress than before the project. In the last few months, I've tried to consider why this may be the case and what I could do to try and improve this. I've struggled with finishing off personal projects for reasons, such as:
 
@@ -23,13 +23,13 @@ A project is an idea with a set objective/goal in mind. For example, a project c
 
 My new theoretical solution, is to try setting and fully realising personal projects. These new projects will try to not fall into these previous issues. So, I'm going to announce my two new projects now!
 
-### First Project: *Create a 4+ track EP*
+## First Project: *Create a 4+ track EP*
 
 I've always enjoyed making music, but recently I've been falling back on habits, rather than trying to be creative/experiment. This results in a lot of my output sounding very similar/uninteresting from my perspective. I've always fantasised with the idea of being able to create music in more than one genre/style. This led me to try making an EP almost 2 years ago, but it wasn't realistic, since I had just started my musical journey. I feel that I have a basic grasp the different aspects of music production, so I'm going to attempt it again :D
 
 I want to try and release it by the end of October but this isn't a strict deadline, more just a guideline to keep myself on track. Between then and now, I will try to upload a weekly sketch (starting next week) and learn/practice guitar everyday. I'm an very new guitar player but I want to use this project to start getting into the habit of playing.
 
-### Second Project: *Create an animated short film*
+## Second Project: *Create an animated short film*
 
 Art has been a really old passion of mine, as I enjoyed drawing a lot when I was younger. This changed upon joining my optional art class, when I came to realise that I was miles behind the level of my classmates. So eventually, after finally getting my grade, I stopped doing art pretty much altogether. I would occasionally use Blender but that was about as close as I got.
 

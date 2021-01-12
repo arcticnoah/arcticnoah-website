@@ -1,9 +1,9 @@
 # Noah
 
-### Job Title
+## Job Title
 
-### Work Experience
+## Work Experience
 
-### Education Qualifications
+## Education Qualifications
 
-### Skills
+## Skills

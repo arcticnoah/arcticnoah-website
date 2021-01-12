@@ -9,7 +9,7 @@ focus:
     - personal-website
 ---
 
-### Finishing off the contact section
+## Finishing off the contact section
 
 So, like I said I would yesterday, I finished off the contact section of the website and setup a branch deployment with Netlify to publish the 'experimental' branch of the site's repo to a separate URL for testing. Thankfully it worked first time, so that was painless :D
 
@@ -23,7 +23,7 @@ I also setup email notifications for whenever I would have a form submission via
 
 {{< image src="netlify-email-notification.png" caption="Email notification setup for form submissions via Netlify">}}
 
-### Fixing my Google Analytics import script
+## Fixing my Google Analytics import script
 
 After having tested the contact section, I realised that the Google analytics code I had written a few days ago wasn't working at all. After some inspection of the code, I had done the following wrong:
  - Put the script into the <body> element of the website rather than the <head> (probably not a big deal but still)

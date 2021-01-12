@@ -11,7 +11,7 @@ tags:
     - followup
 ---
 
-### Reflection of the past month
+## Reflection of the past month
 
 On the first of this month, [I announced that I'd be streaming 4 times a week](/posts/2020-06-01-beginning-to-stream/), for the next two months. Having now reached 1 month into it, I'm starting to lose enthusiasm for the idea but I'm gonna try my best to reignite my flame.
 
@@ -19,7 +19,7 @@ Out of the 16 "planned"/scheduled streams, I have managed to do 15 (some off sch
 
 I've found the overall experience to be quite challenging but in a refreshing way, as its improved my reading out-loud skills, speaking my mind in a slightly more structured way (rather than my typical word vomit) and also generally made me more productive, by only playing games during and after stream (for the most part).
 
-### Changes for the coming month
+## Changes for the coming month
 
 Like I said in my initial post for this goal, I'd like to try streaming creatives but I'm quite scared of having my inconsistent creative process out in the public. However, I'm fairly sure I'll never be quite satisfied with my process, let alone the outcome of said process, so I might as well try again, (I did semi-regular music streams back in September - November 2018) in attempt to combat my mental fear. I would like to continue my gaming streams, but I think my main priority/focus will be creative streams.
 

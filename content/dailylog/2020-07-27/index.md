@@ -8,7 +8,7 @@ focus:
     - computer-graphics
 ---
 
-### Trying to finish off the render
+## Trying to finish off the render
 
 So since I had more a usable internet connection today, I tried my best to finish off the render that I've been working on for a little while now. The main things I wanted to change from last time was: 
 

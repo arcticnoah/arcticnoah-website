@@ -9,11 +9,11 @@ focus:
     - 2020-august-daily-art-challenge
 ---
 
-### Taking breaks once a week?
+## Taking breaks once a week?
 
 I'm tempted to make Sunday my one day 'off' from having to work on something since I am already starting to struggle with keeping up with the daily log and now that I've announced I'll be working on a [daily art challenge](/posts/2020-08-02-august-daily-art-challenge/) for the rest of the month from tomorrow, I've been busy preparing for it.
 
-### Preparations for the daily art challenge
+## Preparations for the daily art challenge
 
 So like I said in the challenge announcement post, I'll be making a concious effort to not fall into the same mistake of my first daily challenge, where I'd leave the task too late in the day to actually learn anything. I found some great resources on things I might try to focus on and how to approach learning them. My current 'rough' plan is the following:
 

@@ -7,7 +7,7 @@ focus:
     - break
 ---
 
-### Deciding when its okay to take a break
+## Deciding when its okay to take a break
 
 For quite some time now, I've struggled with being cold turkey by either doing work like crazy or doing nothing (seemingly productive) at all. After having kept up with my personal goal of achieving something useful everyday for 4 days in a row and wanting to spend some time with my family, I decided that today I should take it easy and only do some work if I feel like it.
 

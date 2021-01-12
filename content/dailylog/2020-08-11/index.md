@@ -12,7 +12,7 @@ focus:
     - music-production
 ---
 
-### Art practice
+## Art practice
 
 I did 10 'gesture' drawings today and a page of robo-beans:
 
@@ -30,7 +30,7 @@ I started following this '[tutorial](https://www.youtube.com/watch?v=e8OPmP75HJU
 
 {{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-11/tutorial-conceptart-landscape-blockout1.png" caption="I need to learn how to do change the brush to use alpha masks or just like a stamp tool for alpha masks in CSP (I know how to do it in Photoshop)" >}}
 
-### Music practice
+## Music practice
 
 So today I started to watch some of Frequent's [sound design videos](https://www.youtube.com/playlist?list=PLz5i4zcrOsfWN218LT4jhjwhhMly4Z16n) (the first 4) which I found to be really educational in terms of what features like Ableton's sampler and granulator are capable of. I tried making some grains which you can hear here:
 
@@ -40,7 +40,7 @@ After doing this, I tried playing around with some other Max4Live devices and de
 
 {{< image src="m4l-current-device-notes.png" caption="Current state of my first M4L device... Mapping works at least" >}}
 
-### Productivity report
+## Productivity report
 
 So I've been keeping this to myself for a while, but quarantine has been an absolutely blessing and curse at the same time. I won't get into too much detail here since I'll probably make it a blog post at some point but a quick summary is that I've been dealing with some sort of depression for quite a few years now and last year was probably my worst year in terms of mental state. Late last year and early this year I was actively working on improving my mindset in general to be more positive and try being more productive but quarantine has slowly been bringing my mindset back to what it used to be.
 

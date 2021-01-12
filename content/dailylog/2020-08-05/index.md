@@ -12,7 +12,7 @@ focus:
     - music-production
 ---
 
-### Continuing anatomy practice
+## Continuing anatomy practice
 
 I watched around another hour of Proko's [figure drawing](https://www.youtube.com/playlist?list=PLtG4P3lq8RHGuMuprDarMz_Y9Fbw_d2ws) playlist. I then did around 1 hour of gesture drawing practise exercise (I really need to figure out a better process/pipeline for taking these pages onto the site in a not crappy and massively time consuming way...)
 
@@ -28,19 +28,19 @@ I watched around another hour of Proko's [figure drawing](https://www.youtube.co
 
 {{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-05/gesture-page6.jpg" >}}
 
-### Starting portrait practice
+## Starting portrait practice
 
 I also found that Proko has another playlist focused on portrait drawing and since thats something I'd really like to learn (and I'm focusing on anatomy this week), I decided to watch the first 2 videos and did a practice page:
 
 {{< image src="/img/portfolio/2020-08-august-daily-art-challenge/drafts/2020-08-05/head-page1.jpg" >}}
 
-### Still no sketchbook progress...
+## Still no sketchbook progress...
 
 Yikes, so still no sketchbook again which is not great because I spent time practicing (which I do find very beneficial already), spent probably too much time resetting and reinstalling stuff for an old tablet and starting the the daily music challenge, so fingers crossed I can actually start a page tomorrow.
 
 I'll try my best to do it first thing tomorrow and I also know I always struggle the most with the first page because of wanting to have an impressive page that sets the tone for the rest of the sketchbook' but this isn't meant to be some masterpiece but landmarks of my progress I guess? I'm not too sure honestly :P
 
-### Starting the daily music challenge
+## Starting the daily music challenge
 
 So I haven't setup a plan of things to learn/focus on like I did with the art challenge, although I am planning to do so tomorrow. Today I did manage to finish off a section of my remake of False Noise's track, [Intertwined Forever](https://open.spotify.com/track/1p2sRtYEKiMvkZxSqksMHX?si=hyrREgt2Qo2QfqhJTgoDAw):
 

@@ -10,7 +10,7 @@ focus:
     - computer-graphics
 ---
 
-### Learning a lower level programming language
+## Learning a lower level programming language
 
 Today during my long session of procrastinating, I found an interesting game engine/framework called [Bevy](https://bevyengine.org/) that uses the language, [Rust](https://www.rust-lang.org/). I already was aware of what the language was, but I decided to look into it a bit more and this led me to find out about [Godot-Rust](https://github.com/godot-rust/godot-rust) and also to finding in general what an awesome language it is.
 
@@ -20,7 +20,7 @@ That being said, I've also seen that it has a pretty steep learning curve and th
 
 I managed to go through the first 2 chapters of the official Rust Book, when you're walked through how to setup rust and then creating a console version of the guessing number game. I decided to stop there since I wanted to spend some time doing other things. 
 
-### Messing around with Blender
+## Messing around with Blender
 
 I tried setting up a natural environment render quickly with the Scatter and Grove addons for Blender and managed to create this:
 
@@ -30,7 +30,7 @@ I tried setting up a natural environment render quickly with the Scatter and Gro
 
 I had setup a simple mist setup so that the background would be covered in mist but that was only done via compositing and since I can't render, its not present in the render preview :(
 
-### New art supplies
+## New art supplies
 
 I ordered some new art supplies for myself that I'd been wanting for a while. I got the follow today:
 

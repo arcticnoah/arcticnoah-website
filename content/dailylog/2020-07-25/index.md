@@ -8,7 +8,7 @@ focus:
     - computer-graphics
 ---
 
-### Using given feedback for improving
+## Using given feedback for improving
 
 A week or so ago, I asked a great friend of mine, [steb](https://twitter.com/st3bongo) (you should totally follow him), to give some feedback on my latest Blender render, which you can see below:
 

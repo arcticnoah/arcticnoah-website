@@ -9,7 +9,7 @@ focus:
     - personal-website
 ---
 
-### Adding third party cookies to this site
+## Adding third party cookies to this site
 
 Today I decided to add Google Analytics to the site, mostly for tracking if I have any traffic (I'm just curious if I am) and also because I wanted to learn more about website cookies.
 
