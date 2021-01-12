@@ -1,27 +1,25 @@
 # Heyo!
 
-My name is Noah, but I mostly go under the alias *arcticnoah*.
-
-I'd like to thank you for taking your time to visit! I have my [daily log](/dailylog) and [blog](/blog) setup here.
+My name is Noah (he/him), but I mostly go under the alias *arcticnoah*.
 
 I am currently focusing on learning multiple aspects of programming, but I also have various other creative hobbies.
 
-<!-- Feel free to [contact]() me or check out my [socials]()! -->
+Feel free to [contact me](/contact) and thank you for taking your time to visit!
 
 ----
 
-## Specific Hobbies
+## My Hobbies
 
-I often don't finish personal projects, so I fall under the term: *Jack of all trades, master of none*.  
+I have too many hobbies, most of which I'd still consider myself a beginner at, so I fall under the term: *Jack of all trades, master of none*.  
 
 Recently however, I've set myself some [personal goals](/tags/goal/) to work towards.
   
 My current interests include:
 
 * Programming
-    * Software Engineering
+    * Software Engineering (*Current focus*)
     * Web Development
-    * Mobile Development (*Current focus*)
+    * Mobile Development
 * Art
     * Traditional (*Current focus*)
     * Digital
@@ -36,7 +34,7 @@ My current interests include:
     * DJ/Live Performing
 * Animation
     * Motion Graphics
-    * Frame By Frame (*Current Focus*)
+    * Frame By Frame
 * Photography/Filmography
     * Landscape Photos
     * Video Editing

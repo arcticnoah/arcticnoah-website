@@ -13,11 +13,14 @@
 
 # Versions:
 
-Currently Hosted Version: **v1.2** (master)
+Currently Hosted Version: **v1.3-alpha** [[master](https://github.com/arcticnoah/arcticnoah-website/tree/master)]
 
-Experimental Version: **v1.3-alpha** (experimental_1.3)
+Experimental Version (*Which is currently not in use...*): **v1.3-alpha** [[experimental_1.3](https://github.com/arcticnoah/arcticnoah-website/tree/master)]
 
 # Changelog:
+
+- **v1.3-alpha (all subject to change)**
+    - TODO: add changes
 
 - **v1.2**
     - Contact section has been added.
@@ -29,6 +32,7 @@ Experimental Version: **v1.3-alpha** (experimental_1.3)
     - Image zooming has been added.
         - Images can be viewed in fullscreen now by clicking/tapping any content image.
         - Using the library: [medium-zoom](https://github.com/francoischalifour/medium-zoom), to add this feature.
+        - *Note: Currently disabled as it makes image carousels difficult to use. Hopefully this will be fixed soon*
     - Custom audio player widget has been added.
         - Consistent style across browsers and devices.
         - Has the most common/important features of a browser audio player.
