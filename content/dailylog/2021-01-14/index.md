@@ -5,7 +5,7 @@ draft: false
 type: "dailylog"
 focus: 
     - graphic-design
-    - reflection
+    - reflecting
     - planning
 ---
 

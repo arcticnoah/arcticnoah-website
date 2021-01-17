@@ -7,7 +7,7 @@ focus:
     - programming
     - web-development
     - personal-website
-    - organising
+    - organisation
 ---
 
 ## Update the site to v1.2!
