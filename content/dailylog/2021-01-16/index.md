@@ -6,10 +6,9 @@ type: "dailylog"
 focus: 
     - reflecting
     - planning
-    - goals
 ---
 
-Today didn't involve much creativity but more just research into various self-help topics, specifically why I slept badly last night. I woke up at around 3am and couldn't fall asleep for nearly 2 hours from sweating, despite it having being around -1 degrees outside with my window wide open. Once I did eventually fall back, it was all okay but I feel like my energy levels have been on a steady decline for the past few weeks and last night felt terrible. It seems like I'm doing most things right apart from having a regular bedtime + wake up time and also my use of screens before bedtime is probably not ideal as I do use a blue light filter from around 9pm on my desktop and phone but thats not good enough.
+Today didn't involve much creativity but more just research into various self-help topics, specifically why I slept badly last night. I woke up at around 3am and couldn't fall asleep for nearly 2 hours from sweating, despite it having being around -1 degrees outside with my window wide open. Once I did eventually fall back, it was all okay but I feel like my energy levels have been on a steady decline for the past few weeks and last night felt terrible. It seems like I'm doing most things right apart from having a regular bedtime + wake up time and also my use of screens before bedtime is probably not ideal as I do use a blue light filter from around 9pm on my desktop and phone but that's not good enough.
 
 I decided to watch episode 2 and 3 of [Noclip's awesome documentary series about the development of Hades](https://www.youtube.com/playlist?list=PL-THgg8QnvU4JEVov1tMlFThNYS92F8uC) and grew to appreciate the game even more so than before. The game is honestly soo good and although I'm not very good at the genre , this one feels the most fun to play in almost every aspect and I just can't believe how much love, sweat and tears has gone into this game by a small but insanely impressive team. Honestly, if I'd ever get into game development professionally and be able to work for a studio like Supergiant Games, I'd be pretty damn happy with my life.
 
