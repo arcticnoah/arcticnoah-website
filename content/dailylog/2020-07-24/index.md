@@ -9,6 +9,8 @@ focus:
     - personal-website
 ---
 
+***Note:* Just to avoid any confusion/worry, this site doesn't use third party cookies anymore! I simple didn't look into privacy-friendly alternatives at the time. I'm currently using [Plausible](plausible.io/), a much better simple analytics provider that follow GDPR rules, you can [read more here](https://plausible.io/privacy-focused-web-analytics).**
+
 ## Adding third party cookies to this site
 
 Today I decided to add Google Analytics to the site, mostly for tracking if I have any traffic (I'm just curious if I am) and also because I wanted to learn more about website cookies.
@@ -19,7 +21,7 @@ Now the issue is that using third party cookies may not be in the interest of al
 
 To do this, I first created the typical cookie consent banner that various other sites have employed but with mine I wanted it to be very easy to disagree to cookies (unlike what most sites do, which is make it as tedious as possible to decline third party cookies). I assume that the user doesn't want to have the cookies enabled by default, so I only load the third party cookie (Google Analytics) when the user agrees to the cookies being enabled.
 
-I also added a cookie policy page that explains what the cookies do, why I'm using them and how to disable/delete them. After having written that last section, I decided to make it easy to toggle between enabling and disabling the third party cookies on the site, by adding a toggle button in the footer (thats present on all the pages of the site).
+I also added a cookie policy page that explains what the cookies do, why I'm using them and how to disable/delete them. After having written that last section, I decided to make it easy to toggle between enabling and disabling the third party cookies on the site, by adding a toggle button in the footer (that's present on all the pages of the site).
 
 {{< video src="cookie-demo" autoplay="false" loop="false" muted="true" controls="true" >}}
 
