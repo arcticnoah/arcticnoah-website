@@ -15,7 +15,7 @@ So after close to 3 months of silence on this site, I'm finally back! Although I
 
 Then having a go at animation for the first time ever:
 
-{{< video src="animation" autoplay="false" loop="true" muted="true" controls="true" caption="The whole purpose of this was to test drive Blender's Grease Pencil feature and try working with it in a 3D world.">}}
+{{< video src="animation" autoplay="false" loop="true" muted="true" controls="true" caption="The whole purpose of this was to test drive Blender's Grease Pencil feature and try working with it in a 3D world." >}}
 
 I started working on a new music track which I'm hoping to finish off in the next week or so:
 
