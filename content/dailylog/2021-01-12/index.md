@@ -4,6 +4,7 @@ date: 2021-01-12
 draft: false
 type: "dailylog"
 focus:
+    - web-development
     - personal-website
 ---
 
@@ -13,4 +14,4 @@ I decided to work on the website a bunch today and I managed to get a hand full 
 
 The main focus of the day was publishing the first pieces of content to the [portfolio](/portfolio) section of the site and I managed to finish both of my [sixth form education projects](content/portfolio/sixth-form-education) so I'm super happy about that. I plan to add this website itself to the portfolio section and also a release of my first ever video game soon.
 
-Sadly thats all I was really up to today (other than playing online with some friends and procrastinating)!
+Sadly that's all I was really up to today (other than playing online with some friends and procrastinating)!
