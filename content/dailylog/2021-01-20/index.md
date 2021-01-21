@@ -1,7 +1,7 @@
 ---
 title: "Trying a slightly new setup for the daily log!"
 date: 2021-01-20T10:15:13Z
-draft: true
+draft: false
 type: "dailylog"
 focus: 
     - web-development
