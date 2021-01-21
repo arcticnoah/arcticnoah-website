@@ -170,3 +170,19 @@ function setupIntersectionObserver(thresholdValue) {
 }
 
 checkClientWidth();
+
+
+// Todolist key
+
+let todolistkeyArray = document.getElementsByClassName("todolist-key");
+for (let i = 0; i < todolistkeyArray.length; i++) {
+    todolistkeyArray[i].children[0].onclick = function() {
+        if (todolistkeyArray[i].children[0].textContent == "Show Key") {
+            todolistkeyArray[i].children[0].textContent = "Hide Key";
+            todolistkeyArray[i].children[1].classList = "todolist-key-body";
+        } else {
+            todolistkeyArray[i].children[0].textContent = "Show Key";
+            todolistkeyArray[i].children[1].classList = "todolist-key-body hide";
+        }
+    };
+}

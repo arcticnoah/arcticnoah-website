@@ -51,6 +51,10 @@
 	background-color: rgba(255, 61, 115, 0.55) !important;
 }
 
+.hide {
+	display: none;
+}
+
 .logo__mark > .greater-icon > path {
 	stroke: var(--accent);
 }
@@ -469,4 +473,45 @@ form textarea {
 
 li > p {
 	margin-bottom: 0px;
+}
+
+.todolist-key {
+	background: var(--light-background-secondary);
+	border-radius: 8px;
+}
+
+.dark-theme .todolist-key {
+	background: var(--dark-background-secondary);
+}
+
+.todolist-key-toggle {
+	font-weight: 700;
+	width: 100%;
+}
+
+.todolist-key-toggle:hover {
+	color: var(--accent);
+}
+
+.todolist-key-body {
+	padding: 2px 20px;
+	border-top: 2px solid var(--light-border-color);
+}
+
+.dark-theme .todolist-key-body {
+	border-top-color: var(--dark-border-color);
+}
+
+input[type=checkbox] {
+	appearance: none;
+}
+
+input[type=checkbox]:after {
+	font-size: 1.15rem;
+	content: "☐";
+}
+
+input[type=checkbox]:checked:after {
+	content: "☑";
+	color: var(--accent);
 }
