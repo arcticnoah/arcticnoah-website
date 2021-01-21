@@ -93,6 +93,10 @@ em {
 	padding-top: 20px;
 }
 
+button {
+	font-family: Inter;
+}
+
 .grid-container {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -199,7 +203,8 @@ em {
 .youtube-embed,
 .blog-post-cover,
 .post-cover,
-.grid-item-cover-container {
+.grid-item-cover-container,
+.todolist-key {
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
@@ -214,7 +219,8 @@ em {
 .dark-theme .youtube-embed,
 .dark-theme .blog-post-cover,
 .dark-theme .post-cover,
-.dark-theme .grid-item-cover-container {
+.dark-theme .grid-item-cover-container
+.dark-theme .todolist-key {
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
 
@@ -478,6 +484,7 @@ li > p {
 .todolist-key {
 	background: var(--light-background-secondary);
 	border-radius: 8px;
+	margin-bottom: 24px;
 }
 
 .dark-theme .todolist-key {
@@ -485,8 +492,8 @@ li > p {
 }
 
 .todolist-key-toggle {
-	font-weight: 700;
 	width: 100%;
+	margin-bottom: 0;
 }
 
 .todolist-key-toggle:hover {
@@ -500,6 +507,10 @@ li > p {
 
 .dark-theme .todolist-key-body {
 	border-top-color: var(--dark-border-color);
+}
+
+.todolist-key-body > h4 {
+	margin-top: 12px;
 }
 
 input[type=checkbox] {
