@@ -203,8 +203,7 @@ button {
 .youtube-embed,
 .blog-post-cover,
 .post-cover,
-.grid-item-cover-container,
-.todolist-key {
+.grid-item-cover-container {
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
@@ -219,8 +218,7 @@ button {
 .dark-theme .youtube-embed,
 .dark-theme .blog-post-cover,
 .dark-theme .post-cover,
-.dark-theme .grid-item-cover-container
-.dark-theme .todolist-key {
+.dark-theme .grid-item-cover-container {
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
 
@@ -482,18 +480,25 @@ li > p {
 }
 
 .todolist-key {
-	background: var(--light-background-secondary);
+	background: var(--light-background);
+	border: 2px solid var(--light-border-color);
 	border-radius: 8px;
 	margin-bottom: 24px;
 }
 
 .dark-theme .todolist-key {
-	background: var(--dark-background-secondary);
+	background: var(--dark-background);
+	border-color: var(--dark-border-color);
 }
 
 .todolist-key-toggle {
+	background: var(--light-background);
 	width: 100%;
 	margin-bottom: 0;
+}
+
+.dark-theme .todolist-key-toggle {
+	background: var(--dark-background);
 }
 
 .todolist-key-toggle:hover {
