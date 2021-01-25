@@ -25,4 +25,4 @@ I then added a cursor sprite, which currently looks like its overlayed but is ac
 
 {{< video src="demo" autoplay="false" loop="true" muted="true" controls="true" caption="Video demo showing the grid snapping and moving the unit by selecting it with the cursor." >}}
 
-I wanted to add drag margins for the camera's movement but I think that'll have to wait as I'm already making rather messy, unscalable code, so tomorrow I'll focus on learning better programming patterns and trying to implement them. 
+I wanted to add drag margins for the camera's movement but I think that'll have to wait as I'm already making rather messy, unscalable code, so tomorrow I'll focus on learning better programming patterns and trying to implement them.
