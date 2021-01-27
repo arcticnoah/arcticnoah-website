@@ -1,5 +1,5 @@
 ---
-title: "Unable to do practically anything today"
+title: "Unable to do practically anything today thanks to tooth pain"
 date: 2021-01-24T18:48:23Z
 draft: false
 type: "dailylog"
@@ -11,7 +11,7 @@ focus:
 
 {{< todolist-key >}}
 
-- [x] (**!**) Learn some programming patterns and implement them into the project
+- [ ] (**!**) Learn some programming patterns and implement them into the project
 - [ ] (**!**) Properly handle inputs correctly
 - [ ] (**!**) Add pathfinding class
 - [ ] Add camera drag margins
