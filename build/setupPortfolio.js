@@ -2,11 +2,13 @@ const fs = require('fs');
 const yaml = require('yaml');
 const cmd = require('node-cmd');
 const crypto = require('crypto');
+const chalk = require('chalk');
 
-let path = process.argv[1];
-let splitPath = path.split('\\');
-let startPath =
+const path = process.argv[1];
+const splitPath = path.split('\\');
+const startPath =
     splitPath.slice(0, splitPath.length - 2).join('/') + '/content/portfolio';
+const buildPath = splitPath.slice(0, splitPath.length - 1).join('/');
 
 let coverImages = {};
 let categoriesList = [];
@@ -72,8 +74,6 @@ for (let fullFilePath of files(startPath, '.md')) {
     }
 }
 
-let buildPath = splitPath.slice(0, splitPath.length - 1).join('/');
-
 // Clean up temp folder before running
 if (fs.existsSync(`${buildPath}/temp`)) {
     fs.rmdirSync(`${buildPath}/temp`, { recursive: true });
@@ -93,7 +93,7 @@ let coverImagesClone = JSON.parse(JSON.stringify(coverImages));
 let categoriesToRender = [];
 
 if (lastBuildInfo != undefined) {
-    console.log('\nChecking files for changes:');
+    console.log(chalk.yellow('\nChecking files for changes:'));
 
     for (let file in lastBuildInfo) {
         let filePass = false;
@@ -145,13 +145,35 @@ if (lastBuildInfo != undefined) {
         let extraMsg = '';
 
         if (filePass && imagePass && categoriesPass)
-            extraMsg = 'Passed all checks!';
+            extraMsg = chalk.green('No changes!');
         else {
-            extraMsg = `File pass: ${filePass}   Image pass: ${imagePass}   Categories pass: ${categoriesPass}`;
+            if (filePass) {
+                filePass = chalk.green('✓');
+            } else {
+                filePass = chalk.red('x');
+            }
+
+            if (imagePass) {
+                imagePass = chalk.green('✓');
+            } else {
+                imagePass = chalk.red('x');
+            }
+
+            if (categoriesPass) {
+                categoriesPass = chalk.green('✓');
+            } else {
+                categoriesPass = chalk.red('x');
+            }
+
+            extraMsg =
+                chalk.yellow('Changes detected:\n') +
+                `File existed before? ${filePass}\nImage changed? ${imagePass}\nCategories changed? ${categoriesPass}`;
         }
 
         console.log(
-            `Portfolio Page: ${file.slice(0, file.length - 9)}\n${extraMsg}\n`
+            'Portfolio Page: ' +
+                chalk.blue(`${file.slice(0, file.length - 9)}`) +
+                `\n${extraMsg}\n`
         );
     }
 } else {
@@ -168,7 +190,6 @@ portfolioFiles.forEach(function (file) {
     // Check for 'category' pages
     categoriesList.forEach(function (category) {
         if (file == category) {
-            // console.log(`${portfolioPath}/${category}`);
             fs.rmdirSync(`${portfolioPath}/${category}`, { recursive: true });
         }
     });
@@ -187,9 +208,6 @@ categoriesList.forEach(function (category) {
         `---\ntitle: "${category}"\nlayout: "list"\n---`
     );
 });
-
-// console.log('Cover images (cleaned):');
-// console.log(coverImagesClone);
 
 for (category of categoriesToRender) {
     if (!(category in coverImagesClone)) {
@@ -219,8 +237,24 @@ for (i of categoriesToRender) {
     }
 }
 
-console.log(`\nCategories list:\n${categoriesList.join(' ')}`);
-console.log(`\nCategories to render:\n${categoriesToRender.join(' ')}\n`);
+console.log(
+    chalk.yellow('Categories list:\n') + `${categoriesList.join(', ')}`
+);
+
+let categoriesToRenderEmpty = true;
+
+for (category of categoriesToRender) {
+    if (category != undefined) categoriesToRenderEmpty = false;
+}
+
+if (!categoriesToRenderEmpty) {
+    console.log(
+        chalk.yellow('\nCategories to render:\n') +
+            `${categoriesToRender.join(' ')}\n`
+    );
+} else {
+    console.log(chalk.yellow('\nNo categories to render\n'));
+}
 
 // Images to GIF rendering
 for (let i of categoriesToRender) {
