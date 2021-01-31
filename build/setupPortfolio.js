@@ -1,0 +1,218 @@
+const fs = require('fs');
+const yaml = require('yaml');
+const cmd = require('node-cmd');
+const crypto = require('crypto');
+
+let path = process.argv[1];
+let splitPath = path.split('\\');
+let startPath =
+    splitPath.slice(0, splitPath.length - 2).join('/') + '/content/portfolio';
+
+let coverImages = {};
+let categoriesList = [];
+let currentBuildInfo = {};
+
+function* files(dir, ext) {
+    for (let f of fs.readdirSync(dir)) {
+        const curr = dir + '/' + f;
+        if (f.endsWith(ext)) {
+            yield curr;
+        } else if (fs.statSync(curr).isDirectory()) {
+            yield* files(curr, ext);
+        }
+    }
+}
+
+function getFrontMatter(src) {
+    return yaml.parse(src.split('---')[1]);
+}
+
+function createBuildInfo(fullFilePath, fileMetaData) {
+    let fileInfo = {};
+
+    let coverImage = fs.readFileSync(
+        fullFilePath.slice(0, fullFilePath.length - 8) + fileMetaData.cover
+    );
+    let coverHash = crypto.createHash('sha256');
+    coverHash.update(coverImage);
+
+    fileInfo['image-hash'] = coverHash.digest('hex');
+    fileInfo['categories'] = fileMetaData.categories;
+
+    return fileInfo;
+}
+
+// Create dictionaries with categories and the files for it
+for (let fullFilePath of files(startPath, '.md')) {
+    let fileMetaData = getFrontMatter(fs.readFileSync(fullFilePath).toString());
+
+    if (!fileMetaData.draft && fileMetaData.useRelativeCover) {
+        // Create build info, so that the next run only renders what it needs to
+        let fileName = fullFilePath.slice(startPath.length + 1);
+
+        currentBuildInfo[fileName] = createBuildInfo(
+            fullFilePath,
+            fileMetaData
+        );
+
+        for (let x of fileMetaData.categories) {
+            if (coverImages[x] == null) {
+                coverImages[x] = [
+                    fullFilePath.slice(0, fullFilePath.length - 8) +
+                        fileMetaData.cover
+                ];
+                categoriesList.push(x);
+            } else {
+                coverImages[x].push(
+                    fullFilePath.slice(0, fullFilePath.length - 8) +
+                        fileMetaData.cover
+                );
+            }
+        }
+    }
+}
+
+let buildPath = splitPath.slice(0, splitPath.length - 1).join('/');
+
+// Clean up temp folder before running
+if (fs.existsSync(`${buildPath}/temp`)) {
+    fs.rmdirSync(`${buildPath}/temp`, { recursive: true });
+}
+
+fs.mkdirSync(`${buildPath}/temp`);
+
+// Determine what needs to be rendered
+let lastBuildInfo = JSON.parse(fs.readFileSync(`${buildPath}/lastBuild.json`));
+let coverImagesClone = JSON.parse(JSON.stringify(coverImages));
+
+console.log('\nChecking files for changes:');
+
+for (let file in lastBuildInfo) {
+    let filePass = false;
+    let imagePass = false;
+    let categoriesPass = false;
+
+    if (currentBuildInfo.hasOwnProperty(file)) {
+        // File existed before
+        filePass = true;
+
+        // Check image hash
+        if (
+            currentBuildInfo[file]['image-hash'] ==
+            lastBuildInfo[file]['image-hash']
+        )
+            imagePass = true;
+
+        // Check if any categories have changed (symmetric difference)
+        let changedCategories = currentBuildInfo[file]['categories']
+            .filter((x) => !lastBuildInfo[file]['categories'].includes(x))
+            .concat(
+                lastBuildInfo[file]['categories'].filter(
+                    (x) => !currentBuildInfo[file]['categories'].includes(x)
+                )
+            );
+
+        if (changedCategories.length == 0) categoriesPass = true;
+    }
+
+    console.log(
+        `Portfolio Page: ${file.slice(
+            0,
+            file.length - 9
+        )}\nFile pass: ${filePass}   Image pass: ${imagePass}   Categories pass: ${categoriesPass}\n`
+    );
+    if (filePass && imagePass && categoriesPass) {
+        // Remove file from render list
+
+        for (category of currentBuildInfo[file]['categories']) {
+            let index = coverImages[category].findIndex(
+                (element) =>
+                    element ==
+                    `${startPath}/${file.slice(0, file.length - 8)}cover.jpg`
+            );
+
+            if (index != -1) delete coverImagesClone[category][index];
+        }
+    }
+}
+
+// Delete previous GIFs/pages to start from a clean state
+let portfolioPath =
+    splitPath.slice(0, splitPath.length - 2).join('/') + '/content/portfolio';
+let portfolioFiles = fs.readdirSync(portfolioPath);
+
+portfolioFiles.forEach(function (file) {
+    // Check for 'category' pages
+    categoriesList.forEach(function (category) {
+        if (file == category) {
+            // console.log(`${portfolioPath}/${category}`);
+            fs.rmdirSync(`${portfolioPath}/${category}`, { recursive: true });
+        }
+    });
+
+    // Check for '.gif's
+    if (file.endsWith('.gif')) {
+        fs.unlinkSync(`${portfolioPath}/${file}`);
+    }
+});
+
+// Create category pages
+categoriesList.forEach(function (category) {
+    fs.mkdirSync(`${portfolioPath}/${category}`);
+    fs.writeFileSync(
+        `${portfolioPath}/${category}/index.md`,
+        `---\ntitle: "${category}"\nlayout: "list"\n---`
+    );
+});
+
+console.log('Cover images (cleaned):');
+console.log(coverImagesClone);
+
+for (category in coverImagesClone) {
+    let foundItem = false;
+
+    for (item of coverImagesClone[category]) {
+        if (item != undefined) {
+            foundItem = true;
+            break;
+        }
+    }
+
+    if (!foundItem) {
+        let index = categoriesList.findIndex((element) => element == category);
+        if (index != -1) delete categoriesList[index];
+        else console.error(`unable to find '${category}' in 'categoriesList'`);
+    }
+}
+
+// Copy images to temp folder for rendering
+for (let i of categoriesList) {
+    if (i == undefined) continue;
+    let x = 0;
+    let tmpPath = `${buildPath}/temp/${i}`;
+
+    if (!fs.existsSync(tmpPath)) {
+        fs.mkdirSync(tmpPath);
+    }
+
+    for (let j of coverImages[i]) {
+        fs.copyFileSync(j, `${buildPath}/temp/${i}/${x + 1}.jpg`);
+        x += 1;
+    }
+}
+
+console.log(`\nCategories list:\n${categoriesList.join(' ')}\n`);
+
+// Images to GIF rendering
+for (let i of categoriesList) {
+    if (i == undefined) continue;
+    cmd.run(
+        `gm convert -delay 150 -loop 0 -size 750x375 "build/temp/${i}/*.jpg" "content/portfolio/${i}/cover.gif"`
+    );
+    console.log(`Finished rendering '${categoriesList[i]}' GIF`);
+}
+
+fs.writeFileSync(
+    `${buildPath}/lastBuild.json`,
+    JSON.stringify(currentBuildInfo)
+);
