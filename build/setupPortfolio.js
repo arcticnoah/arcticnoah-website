@@ -82,58 +82,81 @@ if (fs.existsSync(`${buildPath}/temp`)) {
 fs.mkdirSync(`${buildPath}/temp`);
 
 // Determine what needs to be rendered
-let lastBuildInfo = JSON.parse(fs.readFileSync(`${buildPath}/lastBuild.json`));
+let lastBuildInfo;
+try {
+    lastBuildInfo = JSON.parse(fs.readFileSync(`${buildPath}/lastBuild.json`));
+} catch {
+    lastBuildInfo = undefined;
+}
+
 let coverImagesClone = JSON.parse(JSON.stringify(coverImages));
+let categoriesToRender = [];
 
-console.log('\nChecking files for changes:');
+if (lastBuildInfo != undefined) {
+    console.log('\nChecking files for changes:');
 
-for (let file in lastBuildInfo) {
-    let filePass = false;
-    let imagePass = false;
-    let categoriesPass = false;
+    for (let file in lastBuildInfo) {
+        let filePass = false;
+        let imagePass = false;
+        let categoriesPass = false;
 
-    if (currentBuildInfo.hasOwnProperty(file)) {
-        // File existed before
-        filePass = true;
+        if (currentBuildInfo.hasOwnProperty(file)) {
+            // File existed before
+            filePass = true;
 
-        // Check image hash
-        if (
-            currentBuildInfo[file]['image-hash'] ==
-            lastBuildInfo[file]['image-hash']
-        )
-            imagePass = true;
+            // Check image hash
+            if (
+                currentBuildInfo[file]['image-hash'] ==
+                lastBuildInfo[file]['image-hash']
+            )
+                imagePass = true;
 
-        // Check if any categories have changed (symmetric difference)
-        let changedCategories = currentBuildInfo[file]['categories']
-            .filter((x) => !lastBuildInfo[file]['categories'].includes(x))
-            .concat(
-                lastBuildInfo[file]['categories'].filter(
-                    (x) => !currentBuildInfo[file]['categories'].includes(x)
-                )
-            );
+            // Check if any categories have changed (symmetric difference)
+            let changedCategories = currentBuildInfo[file]['categories']
+                .filter((x) => !lastBuildInfo[file]['categories'].includes(x))
+                .concat(
+                    lastBuildInfo[file]['categories'].filter(
+                        (x) => !currentBuildInfo[file]['categories'].includes(x)
+                    )
+                );
 
-        if (changedCategories.length == 0) categoriesPass = true;
-    }
-
-    console.log(
-        `Portfolio Page: ${file.slice(
-            0,
-            file.length - 9
-        )}\nFile pass: ${filePass}   Image pass: ${imagePass}   Categories pass: ${categoriesPass}\n`
-    );
-    if (filePass && imagePass && categoriesPass) {
-        // Remove file from render list
-
-        for (category of currentBuildInfo[file]['categories']) {
-            let index = coverImages[category].findIndex(
-                (element) =>
-                    element ==
-                    `${startPath}/${file.slice(0, file.length - 8)}cover.jpg`
-            );
-
-            if (index != -1) delete coverImagesClone[category][index];
+            if (changedCategories.length == 0) categoriesPass = true;
+            else {
+                for (category of changedCategories) {
+                    let index = categoriesToRender.findIndex(
+                        (element) => element == category
+                    );
+                    if (index != -1) continue;
+                    else categoriesToRender.push(category);
+                }
+            }
         }
+
+        if (!filePass || !imagePass) {
+            for (category of currentBuildInfo[file]['categories']) {
+                let index = categoriesToRender.findIndex(
+                    (element) => element == category
+                );
+                if (index != -1) continue;
+                else categoriesToRender.push(category);
+            }
+        }
+
+        let extraMsg = '';
+
+        if (filePass && imagePass && categoriesPass)
+            extraMsg = 'Passed all checks!';
+        else {
+            extraMsg = `File pass: ${filePass}   Image pass: ${imagePass}   Categories pass: ${categoriesPass}`;
+        }
+
+        console.log(
+            `Portfolio Page: ${file.slice(0, file.length - 9)}\n${extraMsg}\n`
+        );
     }
+} else {
+    // Last build file missing/not created yet, render everything
+    categoriesToRender = categoriesList;
 }
 
 // Delete previous GIFs/pages to start from a clean state
@@ -165,28 +188,23 @@ categoriesList.forEach(function (category) {
     );
 });
 
-console.log('Cover images (cleaned):');
-console.log(coverImagesClone);
+// console.log('Cover images (cleaned):');
+// console.log(coverImagesClone);
 
-for (category in coverImagesClone) {
-    let foundItem = false;
+for (category of categoriesToRender) {
+    if (!(category in coverImagesClone)) {
+        // No pages use this category anymore, remove it from the list
+        fs.rmdirSync(`${portfolioPath}/${category}`, { recursive: true });
 
-    for (item of coverImagesClone[category]) {
-        if (item != undefined) {
-            foundItem = true;
-            break;
-        }
-    }
-
-    if (!foundItem) {
-        let index = categoriesList.findIndex((element) => element == category);
-        if (index != -1) delete categoriesList[index];
-        else console.error(`unable to find '${category}' in 'categoriesList'`);
+        let index = categoriesToRender.findIndex(
+            (element) => element == category
+        );
+        delete categoriesToRender[index];
     }
 }
 
 // Copy images to temp folder for rendering
-for (let i of categoriesList) {
+for (i of categoriesToRender) {
     if (i == undefined) continue;
     let x = 0;
     let tmpPath = `${buildPath}/temp/${i}`;
@@ -195,16 +213,17 @@ for (let i of categoriesList) {
         fs.mkdirSync(tmpPath);
     }
 
-    for (let j of coverImages[i]) {
+    for (j of coverImages[i]) {
         fs.copyFileSync(j, `${buildPath}/temp/${i}/${x + 1}.jpg`);
         x += 1;
     }
 }
 
-console.log(`\nCategories list:\n${categoriesList.join(' ')}\n`);
+console.log(`\nCategories list:\n${categoriesList.join(' ')}`);
+console.log(`\nCategories to render:\n${categoriesToRender.join(' ')}\n`);
 
 // Images to GIF rendering
-for (let i of categoriesList) {
+for (let i of categoriesToRender) {
     if (i == undefined) continue;
     cmd.run(
         `gm convert -delay 150 -loop 0 -size 750x375 "build/temp/${i}/*.jpg" "content/portfolio/${i}/cover.gif"`
