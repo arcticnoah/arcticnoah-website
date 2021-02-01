@@ -253,7 +253,7 @@ if (!categoriesToRenderEmpty) {
             `${categoriesToRender.join(' ')}\n`
     );
 } else {
-    console.log(chalk.yellow('\nNo categories to render\n'));
+    console.log(chalk.green('\nNo categories to render!\n'));
 }
 
 // Images to GIF rendering
