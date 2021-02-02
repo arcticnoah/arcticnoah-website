@@ -89,7 +89,6 @@ try {
     lastBuildInfo = undefined;
 }
 
-let coverImagesClone = JSON.parse(JSON.stringify(coverImages));
 let categoriesToRender = [];
 
 if (lastBuildInfo != undefined) {
@@ -167,7 +166,7 @@ if (lastBuildInfo != undefined) {
 
             extraMsg =
                 chalk.yellow('Changes detected:\n') +
-                `File existed before? ${filePass}\nImage changed? ${imagePass}\nCategories changed? ${categoriesPass}`;
+                `File existed before? ${filePass}\nSame image? ${imagePass}\nSame categories? ${categoriesPass}`;
         }
 
         console.log(
@@ -188,20 +187,15 @@ let portfolioFiles = fs.readdirSync(portfolioPath);
 
 portfolioFiles.forEach(function (file) {
     // Check for 'category' pages
-    categoriesList.forEach(function (category) {
+    categoriesToRender.forEach(function (category) {
         if (file == category) {
             fs.rmdirSync(`${portfolioPath}/${category}`, { recursive: true });
         }
     });
-
-    // Check for '.gif's
-    if (file.endsWith('.gif')) {
-        fs.unlinkSync(`${portfolioPath}/${file}`);
-    }
 });
 
 // Create category pages
-categoriesList.forEach(function (category) {
+categoriesToRender.forEach(function (category) {
     fs.mkdirSync(`${portfolioPath}/${category}`);
     fs.writeFileSync(
         `${portfolioPath}/${category}/index.md`,
@@ -210,7 +204,7 @@ categoriesList.forEach(function (category) {
 });
 
 for (category of categoriesToRender) {
-    if (!(category in coverImagesClone)) {
+    if (!(category in coverImages)) {
         // No pages use this category anymore, remove it from the list
         fs.rmdirSync(`${portfolioPath}/${category}`, { recursive: true });
 
@@ -262,7 +256,7 @@ for (let i of categoriesToRender) {
     cmd.run(
         `gm convert -delay 150 -loop 0 -size 750x375 "build/temp/${i}/*.jpg" "content/portfolio/${i}/cover.gif"`
     );
-    console.log(`Finished rendering '${categoriesList[i]}' GIF`);
+    console.log(`Finished rendering '${i}' GIF`);
 }
 
 fs.writeFileSync(
