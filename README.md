@@ -28,7 +28,7 @@ Currently Hosted Version: **v1.3-alpha** [[master](https://github.com/arcticnoah
   - Portfolio changes.
     - Category pages now function much the same as the main portfolio page where you pick the category.
     - Hover actions are now simulated on mobile/tablets via an intersection observer.
-    - Improved build script to only render the updated pages' GIFs.
+    - Improved build script to only render the updated pages' GIFs (has some bugs still + needs a refactor).
   - Hugo archetypes has been added.
     - A simple script has been added to simplify the command to generate blank content pages quickly.
   - Small adjustments:

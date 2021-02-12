@@ -30,11 +30,13 @@ Source code available here: [Github Repo](https://github.com/arcticnoah/nea-web-
 *Note:* The program is missing useful, key features since it was my **first Javascript project**, created for my A-Level coursework, which was cancelled in March 2020 due to COVID-19 and I haven't worked on it since.
 
 ---
+
 ## Summary of the project
 
 A website-based chat application, inspired by [Discord](https://discord.com/), for my A-Level (2019-2020 Exam) Computer Science coursework. Its focus was on being privacy-friendly, by letting people host their own chat servers (which would store all the data) for their own communities, be it family, friends, group activities, etc. It was also very accessible, as all it required was a Javascript-enabled web browser with an active internet connection.
 
 ---
+
 ## Technical Sheet
 
 Tools that I used whilst working on this project:
@@ -56,12 +58,14 @@ Tools that I used whilst working on this project:
       - [Nodemailer](https://nodemailer.com/)
 
 ---
-## Helpful/used resources:
+
+## Helpful/used resources
 
 - [Socket.io Chat Example](https://github.com/socketio/socket.io/tree/master/examples/chat)
 - [Login/register page tutorial](https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/), which I used as a basis for mine
 
 ---
+
 ## Process of the project
 
 During my Sixth Form education in the UK, in my programming class, we were expected to create a project of our choosing for the **N**on-**E**xam **A**ssessment (**NEA** for short). I decided to use this project as an opportunity to learn web development and some networking basics, leading me to eventually settle on my project being to create a website-based chat application.

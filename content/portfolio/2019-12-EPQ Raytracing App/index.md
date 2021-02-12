@@ -33,11 +33,13 @@ Source code available here: [Github Repo](https://github.com/arcticnoah/epq-rayt
 *Note:* The program is missing useful, key features since it was my **first C# project**, created for my A-Level coursework and I haven't worked on it since.
 
 ---
+
 ## Summary of the project
 
 A raytracing application, largely based on the [Raytracing in One Weekend (Book Series)](https://raytracing.github.io/), for my A-Level (2019-2020 Exam) EPQ (Extended Project Qualification, where you can research your own topic/question). The purpose of this application was to teach myself how a raytracing works in a practical situation. It was originally designed only for hard-coding a scene into the program but I had to add UI quite late into the project, as I had to present the program to people who knew little about programming, let alone raytracing.
 
 ---
+
 ## Technical Sheet
 
 Tools that I used whilst working on this project:
@@ -50,12 +52,14 @@ Tools that I used whilst working on this project:
     - Windows Forms
 
 ---
-## Helpful/used resources:
+
+## Helpful/used resources
 
 - [Raytracing in One Weekend (Book Series)](https://raytracing.github.io/)
 - [Scratchapixel](https://www.scratchapixel.com/)
 
 ---
+
 ## Process of the project
 
 During my Sixth Form education in the UK, there was an optional subject/qualification that you could take called an EPQ (Extended Project Qualification), where you're asked to select your own question/topic to answer/research whilst documenting the majority of the process. The main outcome of the project should either be something you created (eg, a mini-documentary, in my case, a program) or an essay. At the time of starting the project, I had just started having a more concrete interest in Computer Graphics, so I decided to learn how the various main rendering techniques work. I settled on creating a raytracing program since raytracing seemed the most interesting and visually impressive to me.
