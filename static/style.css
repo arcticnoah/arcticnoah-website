@@ -409,7 +409,7 @@ form textarea {
 .embla__button {
     outline: 0;
     cursor: pointer;
-    background-color: transparent;
+    background-color: transparent !important;
     touch-action: manipulation;
     position: absolute;
     z-index: 1;
