@@ -1,3 +1,5 @@
+# arcticnoah Website
+
 <p align="center">
     <img src="readme-header.jpg">
     <br>
@@ -11,13 +13,13 @@
 
 > Built using [Hugo](https://gohugo.io) with an edited version of the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) theme. Hosted with [Netlify](https://netlify.com/).
 
-# Versions
+## Versions
 
 Currently Hosted Version: **v1.3-alpha** [[master](https://github.com/arcticnoah/arcticnoah-website/tree/master)]
 
 <!-- Experimental Version (*Which is currently not in use...*): **v1.3-alpha** [[experimental_1.3](https://github.com/arcticnoah/arcticnoah-website/tree/master)] -->
 
-# Changelog
+## Changelog
 
 - **v1.3-alpha (all subject to change)**
   - To-do list section for daily log posts has been added.
@@ -74,7 +76,7 @@ Currently Hosted Version: **v1.3-alpha** [[master](https://github.com/arcticnoah
   - Website hosting done with [Netlify](https://netlify.com) (free tier).
     - Added [Forestry.io](https://Forestry.io) as an option for remote editing of the site's content.
 
-# Planned Features
+## Planned Features
 
 - Commission Section/Form
 - CV/Resume
