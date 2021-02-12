@@ -97,7 +97,7 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
 let emblaElements = document.getElementsByClassName("embla-wrapper");
 
 for (let i = 0, len = emblaElements.length; i < len; i++) {
-    let emblaNode = emblaElements[i].childNodes[1];
+    let emblaNode = emblaElements[i].childNodes[1].children[0];
     let embla = EmblaCarousel(emblaNode, { loop: true});
 
     function setupDotBtns(dotsArray, embla) {
@@ -121,20 +121,40 @@ for (let i = 0, len = emblaElements.length; i < len; i++) {
         dotsArray[selected].classList.add("is-selected");
     };
 
+    function setupPrevNextBtns(prevBtn, nextBtn, embla) {
+        prevBtn.addEventListener('click', embla.scrollPrev, false);
+        nextBtn.addEventListener('click', embla.scrollNext, false);
+    }
+
+    const disablePrevNextBtns = (prevBtn, nextBtn, embla) => () => {
+        if (embla.canScrollPrev()) prevBtn.removeAttribute('disabled');
+        else prevBtn.setAttribute('disabled', 'disabled');
+
+        if (embla.canScrollNext()) nextBtn.removeAttribute('disabled');
+        else nextBtn.setAttribute('disabled', 'disabled');
+    };
+
     const dots = emblaElements[i].childNodes[3];
     const dotsArray = generateDotBtns(dots, embla);
     const setSelectedDotBtn = selectDotBtn(dotsArray, embla);
+    
+    const prevBtn = emblaElements[i].childNodes[1].children[1];
+    const nextBtn = emblaElements[i].childNodes[1].children[2];
+    const disablePrevAndNextBtns = disablePrevNextBtns(prevBtn, nextBtn, embla);
 
     setupDotBtns(dotsArray, embla);
+    setupPrevNextBtns(prevBtn, nextBtn, embla);
+
     embla.on("select", setSelectedDotBtn);
+    embla.on("select", disablePrevAndNextBtns);
 }
 
 
 // Currently disabled as it makes carousels pretty annoying to use
 // Image zoom
-// mediumZoom('[data-zoomable]', {
-//     margin: 20
-// });
+mediumZoom('[data-zoomable]', {
+    margin: 20
+});
 
 
 // Mobile 'hover'-like support
