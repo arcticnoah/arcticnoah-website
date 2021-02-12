@@ -531,3 +531,23 @@ input[type=checkbox]:checked:after {
 	content: "☑";
 	color: var(--accent);
 }
+
+.social-button-link {
+	text-decoration: none;
+}
+
+.social-button {
+	background: var(--light-background);
+	border: 2px solid var(--light-border-color);
+	border-radius: 8px;
+	width: 100%;
+}
+
+.dark-theme .social-button {
+	background: var(--dark-background);
+	border-color: var(--dark-border-color);
+}
+
+.social-button:hover {
+	color: var(--accent);
+}

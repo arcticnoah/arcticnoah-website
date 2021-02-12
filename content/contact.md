@@ -9,7 +9,7 @@ Feel free to reach out to me! If you want to email me, use the form below! Other
 
 ## Social Media Links
 
-{{< socials layout="list" >}}
+{{< socials layout="grid" >}}
 
 ## Email Form
 
