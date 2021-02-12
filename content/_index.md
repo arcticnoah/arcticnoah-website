@@ -10,9 +10,9 @@ Feel free to [contact me](/contact) and thank you for taking your time to visit!
 
 ## My Hobbies
 
-I have too many hobbies, most of which I'd still consider myself a beginner at, so I fall under the term: *Jack of all trades, master of none*.  
+I have quite a few hobbies, most of which I'd still consider myself a beginner at, so I currently fall under the term: *Jack of all trades, master of none*.  
 
-Recently however, I've set myself some [personal goals](/tags/goal/) to work towards.
+In an attempt to change this, I've begun setting myself personal goals/projects to work  towards.
   
 My current interests include:
 
@@ -21,9 +21,9 @@ My current interests include:
     * Web Development
     * Mobile Development
 * Art
-    * Traditional (*Current focus*)
+    * Traditional
     * Digital
-    * Computer Graphics (*Current focus*)
+    * Computer Graphics
     * Pixel Art
     * Graphic Design
 * Music
@@ -38,6 +38,6 @@ My current interests include:
 * Photography/Filmography
     * Landscape Photos
     * Video Editing
-* Gaming
+* Game
     * Development (*Current Focus*)
-    * Playing Games
+    * ~~Playing Games~~
