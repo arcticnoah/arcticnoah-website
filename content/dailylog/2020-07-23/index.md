@@ -8,6 +8,7 @@ focus:
     - programming
     - music
     - dj-live-performing
+    - godot
 ---
 
 ## Outcome of today: 

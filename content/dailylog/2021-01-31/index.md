@@ -4,7 +4,9 @@ date: 2021-01-31T13:20:13Z
 draft: false
 type: "dailylog"
 focus: 
-    - draft
+    - personal-website
+    - web-development
+    - programming
 ---
 
 ## Today's to-do list

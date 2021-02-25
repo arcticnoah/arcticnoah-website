@@ -6,6 +6,8 @@ type: "dailylog"
 focus: 
     - game-dev
     - 2021-game-project
+    - programming
+    - unity3d
 ---
 
 ## Today's to-do list
