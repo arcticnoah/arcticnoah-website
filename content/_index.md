@@ -12,7 +12,7 @@ Feel free to [contact me](/contact) and thank you for taking your time to visit!
 
 I have quite a few hobbies, most of which I'd still consider myself a beginner at, so I currently fall under the term: *Jack of all trades, master of none*.  
 
-In an attempt to change this, I've begun setting myself personal goals/projects to work  towards.
+In an attempt to change this, I've begun setting myself personal goals/projects to work towards.
   
 My current interests include:
 
@@ -38,6 +38,4 @@ My current interests include:
 * Photography/Filmography
     * Landscape Photos
     * Video Editing
-* Game
-    * Development (*Current Focus*)
-    * ~~Playing Games~~
+* Game Development (*Current Focus*)
