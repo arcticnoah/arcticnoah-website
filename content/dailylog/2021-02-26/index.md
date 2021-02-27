@@ -39,6 +39,6 @@ So today's the first day in around 2 weeks that I directly work on my game. Sinc
 - Added grid pathfinding (with weighted tile costs), which is currently used for unit movement but will also be used for ranged unit attacks.
 - Created a personal wiki for planning out various aspects of the game. (from gameplay, to game design and programming)
 
-<!-- TODO: add video of current game progress here (too tired, will do in the morning) -->
+{{< video src="demo" autoplay="false" loop="true" muted="true" controls="true" caption="Video demo showing the current progress of the game." >}}
 
 So that's what I've managed to add to the game in the past month, but today I managed to do another iteration on my game design overview document, where I thought of a couple new features to add (if I have the time) and a rough timeline of when I'd like to have certain aspects done by. The rest of the day was trying to organise the code as best I can and also planning out how to expand the game to support features like saving/loading, multiple Unity scenes and other things. The code is in a much better state that it was before, and I think I'm finally starting to grasp how to approach making a game. Tomorrow I'll try to start implementing some of the features I planned today...
