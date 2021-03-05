@@ -1,4 +1,0 @@
----
-title: "personal"
-layout: "list"
----

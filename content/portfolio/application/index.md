@@ -1,4 +1,0 @@
----
-title: "application"
-layout: "list"
----

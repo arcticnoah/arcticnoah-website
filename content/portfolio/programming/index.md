@@ -1,4 +1,0 @@
----
-title: "programming"
-layout: "list"
----
