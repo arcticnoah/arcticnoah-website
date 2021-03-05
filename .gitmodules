@@ -1,0 +1,3 @@
+[submodule "arcticnoah-website-content"]
+	path = content
+	url = https://github.com/arcticnoah/arcticnoah-website-content
