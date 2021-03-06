@@ -2,81 +2,81 @@
 # google search guide: https://support.google.com/webmasters/answer/9274190
 
 baseurl: 'https://arcticnoah.xyz'
-title: "Site :: arcticnoah"
+title: 'Site :: arcticnoah'
 languageCode: en-us
 theme:
-  - hugo-video
-  - hello-friend
+    - hugo-video
+    - hello-friend
 paginate: 5
-metaDataFormat: "yaml"
+metaDataFormat: 'yaml'
 
 # Uncomment below to add 'Disqus' section to blog posts
 # disqusShortname: "arcticnoah"
 
 params:
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName: posts
+    # dir name of your blog content (default is `content/posts`)
+    contentTypeName: posts
 
-  # "light" or "dark"
-  defaultTheme: light
+    # "light" or "dark"
+    defaultTheme: light
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems: 5
+    # if you set this to 0, only submenu trigger will be visible
+    showMenuItems: 5
 
-  # Show reading time in minutes for posts
-  showReadingTime: false
+    # Show reading time in minutes for posts
+    showReadingTime: false
 
 taxonomies:
-  tag: tags
-  category: categories
-  focus: focus
+    tag: tags
+    category: categories
+    focus: focus
 
 languages:
-  en:
-    title: arcticnoah
-    subtitle: ''
-    keywords: ''
-    copyright: ''
-    menuMore: Show more
-    writtenBy: Written by
-    readMore: Read more
-    readOtherPosts: Read other posts
-    newerPosts: Newer posts
-    olderPosts: Older posts
-    minuteReadingTime: min read
-    dateFormatSingle: '2006-01-02'
-    dateFormatList: '2006-01-02'
-    # leave empty to disable, enter display text to enable
-    lastModDisplay: ''
+    en:
+        title: arcticnoah
+        subtitle: ''
+        keywords: ''
+        copyright: ''
+        menuMore: Show more
+        writtenBy: Written by
+        readMore: Read more
+        readOtherPosts: Read other posts
+        newerPosts: Newer posts
+        olderPosts: Older posts
+        minuteReadingTime: min read
+        dateFormatSingle: '2006-01-02'
+        dateFormatList: '2006-01-02'
+        # leave empty to disable, enter display text to enable
+        lastModDisplay: ''
 
-    params:
-      logo:
-        logoText: arcticnoah
-        logoHomeLink: /
-        # or
-        #
-        # path = "/img/your-example-logo.svg"
-        # alt = "Your example logo alt text"
-    
-    menu:
-      main:
-        - identifier: portfolio
-          name: Portfolio
-          url: /portfolio
-          weight: 1
-        - identifier: blog
-          name: Blog
-          url: /blog
-          weight: 2
-        - identifier: dailylog
-          name: Daily Log
-          url: /dailylog
-          weight: 3
-        - identifier: about
-          name: About
-          url: /
-          weight: 4
-        - identifier: contact
-          name: Contact
-          url: /contact
-          weight: 5
+        params:
+            logo:
+                logoText: arcticnoah
+                logoHomeLink: /
+                # or
+                #
+                # path = "/img/your-example-logo.svg"
+                # alt = "Your example logo alt text"
+
+        menu:
+            main:
+                - identifier: portfolio
+                  name: Portfolio
+                  url: /portfolio
+                  weight: 1
+                - identifier: blog
+                  name: Blog
+                  url: /blog
+                  weight: 2
+                # - identifier: dailylog
+                #   name: Daily Log
+                #   url: /dailylog
+                #   weight: 3
+                - identifier: about
+                  name: About
+                  url: /
+                  weight: 4
+                - identifier: contact
+                  name: Contact
+                  url: /contact
+                  weight: 5
