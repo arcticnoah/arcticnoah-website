@@ -1,12 +1,48 @@
+const OPEN_ICONIC_SVG_URL = "/svg/open-iconic/";
+
 const zeroPad = (num, places) => String(num).padStart(places, '0');
+const getStyle = (svgFileName) => {
+    return `-webkit-mask: url(${OPEN_ICONIC_SVG_URL}${svgFileName}.svg);
+        mask: url(${OPEN_ICONIC_SVG_URL}${svgFileName}.svg);`;
+};
 
+const setIcon = (element, iconName) => {
+    element.style = getStyle(iconName);
+    element.alt = iconName;
+}
 
-// Auto pause other audio elements when pressing play
+// Prevent audio overlap from multiple audio sources
 document.addEventListener("play", function(element){
     let audios = document.getElementsByTagName("audio");
-    for (let i = 0, len = audios.length; i < len; i++) {
+    let videos = document.getElementsByTagName("video");
+    let youtubeVideos = document.getElementsByClassName("youtube-embed");
+
+    for (let i = 0; i < audios.length; i++) {
         if (audios[i] != element.target) {
             audios[i].pause();
+        }
+    }
+
+    for (let i = 0; i < videos.length; i++) {
+        if (videos[i] != element.target) {
+            videos[i].muted = true;
+        }
+    }
+
+    // TODO: YouTube video embeds support
+    // for (let i = 0; i < youtubeVideos.length; i++) {
+    //     let test = youtubeVideos[i].getPlaylist();
+    // }
+}, true);
+
+// Since videos are only muted, we check whenever the volume of a video is changed to prevent audio overlap 
+document.addEventListener("volumechange", function(element)
+{
+    let videos = document.getElementsByTagName("video");
+
+    for (let i = 0; i < videos.length; i++) {
+        if (videos[i] != element.target) {
+            videos[i].muted = true;
         }
     }
 }, true);
@@ -16,11 +52,12 @@ document.addEventListener("play", function(element){
 let audioElements = document.getElementsByClassName("html-audio");
 
 for (let i = 0, len = audioElements.length; i < len; i++) {
-    let audioPlayButton = audioElements[i].childNodes[1];
-    let audioSlider = audioElements[i].childNodes[3];
-    let audioTime = audioElements[i].childNodes[5];
-    let audioVolumeButton = audioElements[i].childNodes[7];
-    let audioSource = audioElements[i].childNodes[9];
+    let audioPlayButton = audioElements[i].children[0];
+    let audioSlider = audioElements[i].children[1];
+    let audioCurrentTime = audioElements[i].children[2];
+    let audioLengthTime = audioElements[i].children[4];
+    let audioVolumeButton = audioElements[i].children[5];
+    let audioSource = audioElements[i].children[6];
 
     let audioSourceLengthSeconds, audioSourceLengthMinutes, audioSourceLengthHours;
 
@@ -30,15 +67,15 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
         } else {
             audioSource.pause();
         }
-    }
+    };
 
     audioSource.onplay = function() {
-        audioPlayButton.childNodes[0].setAttribute("data-glyph", "media-pause");
-    }
+        setIcon(audioPlayButton.firstElementChild, "media-pause");
+    };
 
     audioSource.onpause = function() {
-        audioPlayButton.childNodes[0].setAttribute("data-glyph", "media-play");
-    }
+        setIcon(audioPlayButton.firstElementChild, "media-play");
+    };
 
     audioSource.addEventListener("ended", function() {
         audioSource.currentTime = 0;
@@ -52,30 +89,38 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
         audioSourceLengthHours = parseInt(((audioSource.duration / 60) / 60) % 60);
 
         if (audioSourceLengthHours > 0) {
-            audioTime.innerHTML = `00:00:00 / ${zeroPad(audioSourceLengthHours, 2)}:${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
+            audioLengthTime.innerHTML = `${zeroPad(audioSourceLengthHours, 2)}:${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
         } else {
-            audioTime.innerHTML = `00:00 / ${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
+            audioLengthTime.innerHTML = `${zeroPad(audioSourceLengthMinutes, 2)}:${zeroPad(audioSourceLengthSeconds, 2)}`;
         }
     }
 
     function setCurrentAudioPosition() {
-        let timeStampSplit = audioTime.innerHTML.split(" / ");
         let seconds = parseInt(audioSource.currentTime % 60);
         let minutes = parseInt((audioSource.currentTime / 60) % 60);
+
         if (audioSourceLengthHours > 0) {
             let hours = parseInt(((audioSource.currentTime / 60) / 60) % 60);
-            audioTime.innerHTML = `${zeroPad(hours, 2)}:${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)} / ${timeStampSplit[1]}`;
+            audioCurrentTime.innerHTML = `${zeroPad(hours, 2)}:${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)}`;
         } else {
-            audioTime.innerHTML = `${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)} / ${timeStampSplit[1]}`;
+            audioCurrentTime.innerHTML = `${zeroPad(minutes, 2)}:${zeroPad(seconds, 2)}`;
         }
     }
 
-    audioSource.addEventListener("loadeddata", setAudioLength());
+    audioSource.onloadedmetadata = function() {
+        setAudioLength();
+    };
+
+    // Because sometimes the browser may start loading the audio before the
+    // script is loaded, we check if the metadata is ready (readyState = 1)
+    if (audioSource.readyState >= 1) {
+        setAudioLength();
+    }
 
     audioSource.ontimeupdate = function() {
         audioSlider.value = audioSource.currentTime;
         setCurrentAudioPosition();
-    }
+    };
 
     audioSlider.addEventListener("input", function() {
         audioSource.currentTime = audioSlider.value;
@@ -84,10 +129,12 @@ for (let i = 0, len = audioElements.length; i < len; i++) {
     audioVolumeButton.onclick = function() {
         if (!audioSource.muted) {
             audioSource.muted = true;
-            audioVolumeButton.childNodes[0].setAttribute("data-glyph", "volume-off");
+
+            setIcon(audioVolumeButton.firstElementChild, "volume-off");
         } else {
             audioSource.muted = false;
-            audioVolumeButton.childNodes[0].setAttribute("data-glyph", "volume-high");
+
+            setIcon(audioVolumeButton.firstElementChild, "volume-high");
         }
     }
 }

@@ -1,4 +1,4 @@
-:root {
+:root { 
     --accent: #ff3d73;
 
     --light-background: #fff;
@@ -95,6 +95,28 @@ em {
 
 button {
     font-family: Inter;
+}
+
+.open-iconic {
+    width: 1em;
+    height: 1em;
+    max-width: none;
+    position: relative;
+    top: 2px;
+    background-color: var(--light-color);
+
+    /* -webkit-mask: url(/svg/open-iconic/media-play.svg); */
+    -webkit-mask-repeat: no-repeat !important;
+    -webkit-mask-position: center !important;
+    -webkit-mask-size: 1em !important;
+    /* mask: url(/svg/open-iconic/media-play.svg); */
+    mask-repeat: no-repeat !important;
+    mask-position: center !important;
+    mask-size: 1em !important;
+}
+
+.dark-theme .open-iconic {
+    background-color: var(--dark-color);
 }
 
 .grid-container {
@@ -239,7 +261,7 @@ button {
 
 .html-audio-play,
 .html-audio-volume {
-    margin: 10px 16px 11px 16px;
+    margin: 10px 16px 11px 17px;
     height: 16px;
     color: var(--light-color);
 }
@@ -261,7 +283,7 @@ button {
     background: var(--dark-background-secondary);
 }
 
-.html-audio-time {
+.html-audio > p {
     white-space: nowrap;
     margin: 13px -4px 12px 12px;
     font-weight: 600;
@@ -270,7 +292,7 @@ button {
     color: var(--light-color);
 }
 
-.dark-theme .html-audio-time {
+.dark-theme .html-audio > p {
     color: var(--dark-color);
 }
 
