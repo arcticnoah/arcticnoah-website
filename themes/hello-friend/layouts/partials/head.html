@@ -5,9 +5,6 @@
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="{{ .Permalink }}" />
 
-<!-- head custom -->
-{{- partial "prepended_head.html" . }}
-
 <!-- Theme CSS -->
 <link rel="stylesheet" href="{{ "assets/style.css" | absURL }}">
 
@@ -35,5 +32,5 @@
 <!-- Plausible analytics -->
 <script async defer data-domain="arcticnoah.xyz" src="https://plausible.io/js/plausible.js"></script>
 
-<!-- head custom -->
-{{- partial "extended_head.html" . }}
+<!-- Netlify Identity -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
