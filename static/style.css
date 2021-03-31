@@ -43,6 +43,10 @@
     }
 }
 
+body {
+    font-weight: 500 !important;
+}
+
 .capitalize {
     text-transform: capitalize;
 }
