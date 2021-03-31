@@ -10,7 +10,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src https:; frame-ancestors https://www.youtube-nocookie.com"
+    Content-Security-Policy = "frame-ancestors https://www.youtube-nocookie.com"
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
